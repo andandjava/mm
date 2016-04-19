@@ -1,0 +1,389 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@color/white"
+    android:orientation="vertical" 
+    >
+    <ScrollView 
+         android:layout_width="fill_parent"
+         android:layout_height="fill_parent"
+         >
+    
+
+            <RelativeLayout
+                android:id="@+id/checkLay1"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:layout_alignParentLeft="true"
+                android:layout_centerInParent="true"
+                android:background="@drawable/background1"
+                android:padding="10dp" >
+                
+                <TextView
+        android:id="@+id/tv_title"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="#ebebeb"
+        android:singleLine="true"
+        android:ellipsize="end"
+         android:padding="10dp"
+        android:text="ORDER INFORMATION"
+        android:textColor="@color/black"
+        android:textSize="16dp" />
+
+    <Button
+        android:id="@+id/btnClose"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:background="@drawable/icon_wrong"
+        android:padding="10dp" />
+                
+                <TextView
+                android:id="@+id/tv_ref_id"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:padding="10dp"
+                android:layout_below="@+id/tv_title"
+                android:textSize="16sp"
+                android:textColor="#838383"
+                android:text="Ref ID:"/>
+
+                <View
+                    android:id="@+id/view33"
+                    android:layout_width="fill_parent"
+                    android:layout_height="1dp"
+                    android:layout_below="@+id/tv_ref_id"
+                    android:background="#DCDCDC" />
+                
+                
+                
+                <LinearLayout
+                    android:id="@+id/rr_date_layout1"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/view33"
+                    android:padding="5dp"
+                    android:orientation="vertical" >
+
+                 <TextView
+                     android:id="@+id/tv_serviceName"
+                     android:layout_width="fill_parent"
+                     android:layout_height="wrap_content"
+                     android:layout_marginBottom="5dp"
+                     android:paddingBottom="5dp"
+                     android:paddingLeft="5dp"
+                     android:paddingTop="5dp"
+                     android:text="72 HYD Tirupathi Benz/Volvo"
+                      android:textColor="#838383"
+                     android:textSize="16sp" />
+
+                 <TextView
+                     android:id="@+id/tv_vehicletype"
+                     android:layout_width="fill_parent"
+                     android:layout_height="wrap_content"
+                     android:layout_marginBottom="5dp"
+                     android:paddingBottom="5dp"
+                     android:paddingLeft="5dp"
+                     android:text="AC/45"
+                      android:textColor="#838383"
+                     android:textSize="16sp" />
+
+
+                    
+                </LinearLayout>
+                
+                <View
+                    android:id="@+id/view4"
+                    android:layout_width="fill_parent"
+                    android:layout_height="1dp"
+                    android:layout_below="@+id/rr_date_layout1"
+                    android:background="#DCDCDC" />
+
+                <RelativeLayout
+                    android:id="@+id/stayNightsLayout"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/view4"
+                    android:padding="10dp" >
+
+                    <TextView
+                        android:id="@+id/tvjourneydateTime"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="5dp"
+                        android:text="JourneyDate and Time"
+                        android:textColor="#838383"
+                        android:textSize="16sp" />
+                    
+                </RelativeLayout>
+
+                <View
+                    android:id="@+id/view555"
+                    android:layout_width="fill_parent"
+                    android:layout_height="1dp"
+                    android:layout_below="@+id/stayNightsLayout"
+                    android:background="#DCDCDC" />
+                
+                 <RelativeLayout
+                    android:id="@+id/stayRoomNumbersLayout"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/view555"
+                    android:padding="10dp" >
+                    
+                     
+                     
+                     <!-- <RelativeLayout
+                         android:id="@+id/RelativeLayout01"
+                         android:layout_width="fill_parent"
+                         android:layout_height="wrap_content"
+                         android:layout_alignParentLeft="true"
+                         android:layout_alignParentTop="true"
+                         android:layout_weight="1" > -->
+
+                         <TextView
+                             android:id="@+id/TextView02"
+                             android:layout_width="20dp"
+                             android:layout_height="20dp"
+                             android:layout_alignParentLeft="true"
+                             android:layout_centerInParent="true"
+                             android:background="@drawable/seats"
+                             android:paddingLeft="5dp"
+                             android:paddingTop="5dp" />
+
+                         <LinearLayout
+                             android:id="@+id/LinearLayout01"
+                             android:layout_width="wrap_content"
+                             android:layout_height="wrap_content"
+                             android:layout_marginLeft="5dp"
+                             android:layout_toRightOf="@+id/TextView02"
+                             android:orientation="vertical" >
+
+                             <TextView
+                                 android:id="@+id/tv_no_of_seats"
+                                 android:layout_width="wrap_content"
+                                 android:layout_height="wrap_content"
+                                 android:paddingLeft="5dp"
+                                 android:paddingTop="5dp"
+                                 android:text="Seats"
+                                 android:textColor="#838383"
+                                 android:textSize="12sp" />
+
+                             <TextView
+                                 android:id="@+id/tv_seat_numbers"
+                                 android:layout_width="wrap_content"
+                                 android:layout_height="wrap_content"
+                                 android:layout_marginBottom="5dp"
+                                 android:padding="5dp"
+                                 android:text="40,08"
+                                 android:textColor="#40ba57"
+                                 android:textSize="12sp" />
+                         </LinearLayout>
+                  <!--    </RelativeLayout> -->
+                     
+
+                   <!--  <TextView
+                        android:id="@+id/roomsTxt"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="5dp"
+                        android:text="No OF ROOMS"
+                        android:textColor="@color/black"
+                        android:textSize="16sp" />
+
+                    <TextView
+                        android:id="@+id/roomsValTxt"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_marginBottom="5dp"
+                        android:text="1"
+                        android:textColor="#838383"
+                        android:textSize="18sp" /> -->
+                </RelativeLayout>
+
+                <View
+                    android:id="@+id/view567"
+                    android:layout_width="fill_parent"
+                    android:layout_height="1dp"
+                    android:layout_below="@+id/stayRoomNumbersLayout"
+                    android:background="#DCDCDC" />
+                
+                <LinearLayout
+                    android:id="@+id/ll_no_of_occupants1"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/view567"
+                    android:padding="5dp"
+                    android:orientation="horizontal"
+                    >
+                     
+
+                    <TextView
+                        android:id="@+id/tv_text_occupants1"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:text="No OF OCCUPANTS"
+                        android:layout_weight="1"
+                        android:padding="5dp"
+                         android:textColor="#838383"
+                        android:textSize="16sp" />
+
+                 <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                     android:layout_weight="1" >
+                    <TextView
+                        android:id="@+id/tv_value_adults1"
+                         android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:text="ADULTS"
+                        android:padding="5dp"
+                        android:textColor="#838383"
+                        android:textSize="12sp"
+                        android:layout_weight="1" />
+
+                     <TextView
+                        android:id="@+id/tv_value_children1"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:padding="5dp"
+                        android:textColor="#838383"
+                         android:text="CHILDREN"
+                        android:textSize="12sp"
+                        android:layout_weight="1"
+                        
+                        />
+                     </LinearLayout>
+                    
+                </LinearLayout>
+                
+               <View
+                    android:id="@+id/view51"
+                    android:layout_width="fill_parent"
+                    android:layout_height="1dp"
+                    android:layout_below="@+id/ll_no_of_occupants1"
+                    android:background="#DCDCDC" />
+
+               <LinearLayout
+                    android:id="@+id/rr_roomtype"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/view51"
+                    android:padding="10dp"
+                    android:weightSum="1"
+                    android:orientation="horizontal"
+                     >
+
+                    <TextView
+                     android:id="@+id/tv_Boarding_place"
+                     android:layout_width="fill_parent"
+                     android:layout_height="wrap_content"
+                     android:text="Boarding Point : YATRINIVAS, Ph: 9848126947"
+                     android:textColor="#838383"
+                     android:textSize="16sp" />
+
+                   
+                </LinearLayout>
+
+                <View
+                    android:id="@+id/view61"
+                    android:layout_width="fill_parent"
+                    android:layout_height="1dp"
+                    android:layout_below="@+id/rr_roomtype"
+                    android:background="#DCDCDC" />
+                
+                <RelativeLayout
+                    android:id="@+id/grandTotalLay1"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/view61"
+                    android:background="@drawable/background1"
+                    android:padding="5dp" >
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:layout_centerVertical="true"
+                    android:gravity="center" >
+
+                    <TextView
+                        android:id="@+id/textView_ta1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Total Amount"
+                        android:textColor="@color/black"
+                        android:textSize="16sp" />
+
+                    <TextView
+                        android:id="@+id/textView_inc1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Incl. Taxes &amp; Service Fee"
+                        android:textSize="12sp" 
+                        android:textColor="@color/black"/>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:orientation="vertical" >
+
+                    <TextView
+                        android:id="@+id/luxTaxTxt"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                         android:textColor="#838383"
+                        android:textSize="9sp" 
+                        android:visibility="gone" />
+                    
+                    <TextView
+                        android:id="@+id/serviceTaxtxt"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Service Tax : 0"
+                        android:textSize="9sp"
+                         android:textColor="#838383"
+                         android:visibility="gone" />
+                    
+                    <TextView
+                        android:id="@+id/grandTotal_Result"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Rs 0"
+                        android:textColor="#D95469"
+                        android:textSize="25sp" />
+                </LinearLayout>
+                   
+            </RelativeLayout>
+             <View
+                    android:id="@+id/view611"
+                    android:layout_width="fill_parent"
+                    android:layout_height="1dp"
+                    android:layout_below="@+id/grandTotalLay1"
+                    android:background="#DCDCDC" />
+             
+                <TextView
+                        android:id="@+id/tv_summary"
+                        android:layout_width="fill_parent"
+                        android:gravity="center_horizontal|center_vertical"
+                        android:layout_centerHorizontal="true"
+                        android:layout_centerVertical="true"
+                        android:layout_height="wrap_content"
+                         android:layout_below="@+id/view611"
+                        android:text="For cancellations / Modifications, visit the my Reservations page on website to retrieve your reservation.\n or \n Contact Helpdesk"
+                        android:textColor="@color/black"
+                        android:textSize="16sp"
+                        android:padding="10dp" />
+                
+            </RelativeLayout>
+            </ScrollView>
+        </RelativeLayout>
+    
+

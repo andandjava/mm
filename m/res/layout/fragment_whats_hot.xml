@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#e4e4e4" >
+
+    <TextView
+        android:id="@+id/txtLabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:text="Find People View"
+        android:textSize="16dp"
+        android:visibility="gone" />
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/txtLabel"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp"
+        android:src="@drawable/ic_people"
+        android:visibility="gone" />
+
+    <ListView
+        android:id="@+id/listView1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="5dp"
+        android:background="#e4e4e4"
+        android:divider="@android:color/transparent"
+        android:dividerHeight="15.0sp"
+        android:padding="10dp"
+        android:paddingRight="5dp" >
+    </ListView>
+
+    <ListView
+        android:id="@+id/search_listView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="5dp"
+        android:background="#e4e4e4"
+        android:divider="@android:color/transparent"
+        android:dividerHeight="15.0sp"
+        android:padding="10dp"
+        android:paddingRight="5dp"
+        android:visibility="gone" >
+    </ListView>
+
+     <TextView
+        android:id="@+id/txtMsg"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_below="@id/textView1"
+        android:gravity="center_vertical|center_horizontal"
+        android:text="No favorites"
+        android:visibility="gone"
+        android:textSize="25sp" /> 
+        
+
+</RelativeLayout>

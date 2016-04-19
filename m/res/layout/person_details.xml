@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+     android:background="#f0f0f0"
+    android:padding="3dp" >
+
+    <RelativeLayout
+        android:id="@+id/lay"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical"
+        android:orientation="horizontal" >
+
+        <EditText
+            android:id="@+id/editname"
+            android:layout_width="90dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:hint="name"
+            android:inputType="textCapWords"
+            android:singleLine="true" >
+
+            <requestFocus />
+        </EditText>
+
+        <EditText
+            android:id="@+id/editgender"
+            android:layout_width="90dp"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:hint="gender"
+            android:inputType="textCapWords"
+            android:maxLength="9"
+            android:singleLine="true" />
+
+        <EditText
+            android:id="@+id/editage"
+            android:layout_width="90dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:digits="123"
+            android:hint="age"
+            android:maxLength="3"
+            android:singleLine="true" />
+    </RelativeLayout>
+
+</LinearLayout>

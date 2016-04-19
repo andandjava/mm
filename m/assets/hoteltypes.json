@@ -1,0 +1,25 @@
+{
+    "hoteltypes": [
+        {
+            "unit_code": "10101",
+            "unit_name": "KEESARAGUTTA,HARITHA HOTEL",
+            "room_types": [
+                {
+                    "room_type_code": "17",
+                    "room_type_name": "A/C ROOM",
+                    "total_rooms": "11"
+                },
+                {
+                    "room_type_code": "18",
+                    "room_type_name": "NON A/C ROOM",
+                    "total_rooms": "3"
+                },
+                {
+                    "room_type_code": "01",
+                    "room_type_name": "A/C SUITE",
+                    "total_rooms": "1"
+                }
+            ]
+        }
+    ]
+}

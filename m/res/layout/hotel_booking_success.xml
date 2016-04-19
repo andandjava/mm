@@ -1,0 +1,513 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#F2F2F2"
+    android:orientation="vertical" >
+
+    <ScrollView
+        android:id="@+id/scrollView1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/backHomeBtn" >
+
+        <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent" >
+
+            <TextView
+                android:id="@+id/checkTick"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="20dp"
+                android:drawablePadding="5dp"
+                android:drawableTop="@drawable/chechk"
+                android:text="Thank you"
+                android:textColor="#60B97F"
+                android:textSize="30sp" />
+
+            <TextView
+                android:id="@+id/accAddressTxt"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/checkTick"
+                android:gravity="center"
+                android:padding="30dp"
+                android:text="Your booking for Harita Taramati Baradari Resort Sucessfully done!"
+                android:textColor="#808080"
+                android:textIsSelectable="true"
+                android:textSize="18dp" />
+
+            <RelativeLayout
+                android:id="@+id/checkLay"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_below="@+id/accAddressTxt"
+                android:layout_margin="20dp"
+                android:background="@drawable/background1"
+                android:padding="3dp" >
+
+                <LinearLayout
+                    android:id="@+id/referenceIdLayout"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:orientation="vertical"
+                    android:padding="10dp" >
+
+                    <TextView
+                        android:id="@+id/textView1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Ref ID : TTD 056789"
+                        android:textColor="#6E6E6E"
+                        android:textSize="20sp" />
+                </LinearLayout>
+
+                <View
+                    android:id="@+id/view11"
+                    android:layout_width="fill_parent"
+                    android:layout_height="1dp"
+                    android:layout_below="@+id/referenceIdLayout"
+                    android:layout_marginBottom="5dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:background="#DCDCDC" />
+
+                <LinearLayout
+                    android:id="@+id/checkingLayout"
+                    android:layout_width="fill_parent"
+                    android:layout_height="70dp"
+                    android:layout_below="@+id/view11"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:orientation="horizontal" >
+
+                    <LinearLayout
+                        android:id="@+id/checkinLayout"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:orientation="vertical"
+                        android:padding="5dp" >
+
+                        <TextView
+                            android:id="@+id/textView2"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:padding="5dp"
+                            android:text="CHECK - IN"
+                            android:textColor="#838383"
+                            android:textSize="12sp" />
+
+                        <LinearLayout
+                            android:id="@+id/ll"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="10dp" >
+
+                            <TextView
+                                android:id="@+id/calIcon1"
+                                android:layout_width="20dp"
+                                android:layout_height="20dp"
+                                android:background="@drawable/calendaricon" />
+
+                            <TextView
+                                android:id="@+id/dayTxt"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="5dp"
+                                android:text="Mon, "
+                                android:textColor="#838383"
+                                android:textSize="13sp" />
+
+                            <TextView
+                                android:id="@+id/textView3"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_centerVertical="true"
+                                android:layout_marginRight="5dp"
+                                android:layout_toRightOf="@+id/dayTxt"
+                                android:text="11"
+                                android:textColor="#7D7D7D"
+                                android:textSize="17sp" />
+
+                            <TextView
+                                android:id="@+id/monthTxt"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginBottom="5dp"
+                                android:layout_toRightOf="@id/textView3"
+                                android:text="MAY&apos;15"
+                                android:textColor="#838383"
+                                android:textSize="13sp" />
+                        </LinearLayout>
+                    </LinearLayout>
+
+                    <View
+                        android:id="@+id/view2"
+                        android:layout_width="1dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="10dp"
+                        android:layout_marginTop="10dp"
+                        android:background="#DCDCDC" />
+
+                    <LinearLayout
+                        android:id="@+id/checkoutLayout"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:orientation="vertical"
+                        android:padding="5dp" >
+
+                        <TextView
+                            android:id="@+id/textView2"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:padding="5dp"
+                            android:text="CHECK - OUT"
+                            android:textColor="#838383"
+                            android:textSize="12sp" />
+
+                        <LinearLayout
+                            android:id="@+id/ll"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="10dp" >
+
+                            <TextView
+                                android:id="@+id/textView10"
+                                android:layout_width="20dp"
+                                android:layout_height="20dp"
+                                android:background="@drawable/calendaricon" />
+
+                            <TextView
+                                android:id="@+id/day1Txt"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="5dp"
+                                android:text="Wed, "
+                                android:textColor="#838383"
+                                android:textSize="13sp" />
+
+                            <TextView
+                                android:id="@+id/textVie"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginRight="5dp"
+                                android:text="13"
+                                android:textColor="#7D7D7D"
+                                android:textSize="17sp" />
+
+                            <TextView
+                                android:id="@+id/monthTxt1"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginBottom="5dp"
+                                android:text="MAY&apos;15"
+                                android:textColor="#838383"
+                                android:textSize="13sp" />
+                        </LinearLayout>
+                    </LinearLayout>
+                </LinearLayout>
+
+                <View
+                    android:id="@+id/view3"
+                    android:layout_width="fill_parent"
+                    android:layout_height="1dp"
+                    android:layout_below="@+id/checkingLayout"
+                    android:layout_marginBottom="5dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:background="#DCDCDC" />
+
+                <RelativeLayout
+                    android:id="@+id/stayNightsLayout"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/view3"
+                    android:layout_marginLeft="10dp"
+                    android:padding="10dp" >
+
+                    <TextView
+                        android:id="@+id/textView4"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="5dp"
+                        android:text="NIGHTS"
+                        android:textColor="#272727"
+                        android:textSize="16sp" />
+
+                    <TextView
+                        android:id="@+id/textView5"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_marginBottom="5dp"
+                        android:layout_marginRight="5dp"
+                        android:text="1"
+                        android:textColor="#7D7D7D"
+                        android:textSize="18sp" />
+                </RelativeLayout>
+
+                <View
+                    android:id="@+id/view4"
+                    android:layout_width="fill_parent"
+                    android:layout_height="1dp"
+                    android:layout_below="@+id/stayNightsLayout"
+                    android:layout_marginBottom="5dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:background="#DCDCDC" />
+
+                <RelativeLayout
+                    android:id="@+id/roomsLayout"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/view4"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:padding="10dp" >
+
+                    <TextView
+                        android:id="@+id/textView4"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_marginBottom="5dp"
+                        android:text="ROOM"
+                        android:textColor="#272727"
+                        android:textSize="16sp" />
+
+                    <LinearLayout
+                        android:id="@+id/adultLay"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="10dp"
+                        android:layout_toLeftOf="@+id/childLay"
+                        android:orientation="vertical" >
+
+                        <TextView
+                            android:id="@+id/textView6"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="ADULTS"
+                            android:textColor="#C3C3C3"
+                            android:textSize="14sp" />
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="35dp"
+                            android:layout_gravity="center_horizontal"
+                            android:padding="5dp" >
+
+                            <TextView
+                                android:id="@+id/adult_val"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center_vertical"
+                                android:layout_weight="1"
+                                android:gravity="center_vertical|center_horizontal"
+                                android:text="2"
+                                android:textColor="#C3C3C3"
+                                android:textSize="16sp" />
+                        </LinearLayout>
+                    </LinearLayout>
+
+                    <TextView
+                        android:id="@+id/symbol"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_toRightOf="@+id/adultLay"
+                        android:paddingTop="15dp"
+                        android:text="+"
+                        android:textColor="#C3C3C3"
+                        android:textSize="18sp" />
+
+                    <LinearLayout
+                        android:id="@+id/childLay"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10dp"
+                        android:layout_toLeftOf="@+id/textView7"
+                        android:orientation="vertical" >
+
+                        <TextView
+                            android:id="@+id/textView6"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="CHILDREN"
+                            android:textColor="#C3C3C3"
+                            android:textSize="14sp" />
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="35dp"
+                            android:layout_gravity="center_horizontal"
+                            android:padding="5dp" >
+
+                            <TextView
+                                android:id="@+id/child_val"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center_vertical"
+                                android:layout_weight="1"
+                                android:gravity="center_vertical|center_horizontal"
+                                android:text="1"
+                                android:textColor="#C3C3C3"
+                                android:textSize="16sp" />
+                        </LinearLayout>
+                    </LinearLayout>
+
+                    <TextView
+                        android:id="@+id/textView7"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_toLeftOf="@+id/roomsResult_val"
+                        android:paddingLeft="10dp"
+                        android:paddingTop="15dp"
+                        android:text="="
+                        android:textSize="18dp" />
+
+                    <TextView
+                        android:id="@+id/roomsResult_val"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:layout_marginTop="5dp"
+                        android:paddingLeft="10dp"
+                        android:paddingTop="15dp"
+                        android:text="3"
+                        android:textColor="#7D7D7D"
+                        android:textSize="18sp" />
+
+                </RelativeLayout>
+
+                <View
+                    android:id="@+id/view5"
+                    android:layout_width="fill_parent"
+                    android:layout_height="1dp"
+                    android:layout_below="@+id/roomsLayout"
+                    android:layout_marginBottom="5dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:background="#DCDCDC" />
+
+                <RelativeLayout
+                    android:id="@+id/roomtypeLayout"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/view5"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:padding="10dp" >
+
+                    <TextView
+                        android:id="@+id/textView4"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_marginBottom="5dp"
+                        android:text="ROOM TYPE"
+                        android:textColor="#272727"
+                        android:textSize="16sp" />
+
+                    <TextView
+                        android:id="@+id/selectRoomTypeBtn"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:drawablePadding="20dp"
+                        android:padding="8dp"
+                        android:text="Standard Non AC Room"
+                        android:textColor="#C3C3C3"
+                        android:textSize="14sp" />
+                </RelativeLayout>
+
+                <View
+                    android:id="@+id/view6"
+                    android:layout_width="fill_parent"
+                    android:layout_height="1dp"
+                    android:layout_below="@+id/roomtypeLayout"
+                    android:layout_marginBottom="5dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:background="#DCDCDC" />
+
+                <RelativeLayout
+                    android:id="@+id/grandTotalLay"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/view6"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:padding="10dp" >
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical" >
+
+                        <TextView
+                            android:id="@+id/textView8"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Total Amount"
+                            android:textColor="#272727"
+                            android:textSize="16sp" />
+
+                        <TextView
+                            android:id="@+id/textView9"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Incl. Taxes &amp; Service Fee"
+                            android:textColor="#7A7A7A"
+                            android:textSize="11dp" />
+                    </LinearLayout>
+
+                    <TextView
+                        android:id="@+id/grandTotal_Result"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:text="Rs 3000"
+                        android:textColor="#D95469"
+                        android:textSize="25sp" />
+                </RelativeLayout>
+            </RelativeLayout>
+
+            <TextView
+                android:id="@+id/txtMsg"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/checkLay"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="20dp"
+                android:layout_marginBottom="20dp"
+                android:text="Please check your email for more details" />
+        </RelativeLayout>
+    </ScrollView>
+
+    <Button
+        android:id="@+id/backHomeBtn"
+        android:layout_width="fill_parent"
+        android:layout_height="50dp"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="false"
+        android:background="#D08937"
+        android:drawableLeft="@drawable/back_icon"
+        android:paddingLeft="20dp"
+        android:gravity="center_vertical|center_horizontal"
+        android:text="Back to Home"
+        android:textColor="#ffffff"
+        android:textSize="20sp" />
+
+</RelativeLayout>

@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical" >
+
+    <TextView
+        android:id="@+id/tv_select_font"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:paddingTop="10dp"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+        android:background="#ffffff"
+        android:textSize="16dp"
+        android:text="Font size" />
+
+    <TextView
+        android:id="@+id/smallTxt"
+        android:layout_width="200dp"
+        android:layout_height="45dp"
+        android:layout_marginBottom="0.5dp"
+        android:background="#ffffff"
+        android:button="@null"
+        android:drawableRight="@drawable/check_unselect"
+        android:gravity="center_vertical|left"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+        android:text="@string/radio_font_small" />
+
+    <TextView
+        android:id="@+id/mediumTxt"
+        android:layout_width="200dp"
+        android:layout_height="45dp"
+        android:layout_marginBottom="0.5dp"
+        android:background="#ffffff"
+        android:button="@null"
+        android:drawableRight="@drawable/check_unselect"
+        android:gravity="center_vertical|left"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+        android:text="@string/radio_font_normal" />
+
+    <TextView
+        android:id="@+id/largeTxt"
+        android:layout_width="200dp"
+        android:layout_height="45dp"
+        android:layout_marginBottom="0.5dp"
+        android:background="#ffffff"
+        android:button="@null"
+        android:drawableRight="@drawable/check_unselect"
+        android:gravity="center_vertical|left"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+        android:text="@string/radio_font_large" />
+
+</LinearLayout>

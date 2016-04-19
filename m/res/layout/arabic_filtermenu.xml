@@ -1,0 +1,315 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_gravity="end"
+    android:background="#ffffff"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:id="@+id/parentLayout"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_margin="10dp" >
+
+        <LinearLayout
+            android:id="@+id/layout"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/selectLocation_txt"
+            android:layout_marginTop="10dp"
+            android:background="#D2D2D2"
+            android:orientation="vertical"
+            android:padding="0.5dp"
+            android:visibility="gone" >
+
+            <TextView
+                android:id="@+id/selectCatTxt"
+                android:layout_width="fill_parent"
+                android:layout_height="40dp"
+                android:layout_marginBottom="0.5dp"
+                android:background="#f5f5f5"
+                android:gravity="center_vertical"
+                android:paddingLeft="10dp"
+                android:text="@string/select_category"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/divineDestionationTxt"
+                android:layout_width="fill_parent"
+                android:layout_height="40dp"
+                android:layout_marginBottom="0.5dp"
+                android:background="#ffffff"
+                android:drawableLeft="@drawable/check_unselect"
+                android:gravity="center_vertical"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp"
+                android:text="@string/category_divine" />
+
+            <TextView
+                android:id="@+id/heritageTxt"
+                android:layout_width="fill_parent"
+                android:layout_height="40dp"
+                android:layout_marginBottom="0.5dp"
+                android:background="#ffffff"
+                android:drawableLeft="@drawable/check_unselect"
+                android:gravity="center_vertical"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp"
+                android:text="@string/category_heritage" />
+
+            <TextView
+                android:id="@+id/natureTxt"
+                android:layout_width="fill_parent"
+                android:layout_height="40dp"
+                android:layout_marginBottom="0.5dp"
+                android:background="#ffffff"
+                android:drawableLeft="@drawable/check_unselect"
+                android:gravity="center_vertical"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp"
+                android:text="@string/category_nature" />
+
+            <TextView
+                android:id="@+id/wildlifeTxt"
+                android:layout_width="fill_parent"
+                android:layout_height="40dp"
+                android:layout_marginBottom="0.5dp"
+                android:background="#ffffff"
+                android:drawableLeft="@drawable/check_unselect"
+                android:gravity="center_vertical"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp"
+                android:text="@string/category_wildlife" />
+
+            <TextView
+                android:id="@+id/journeyTxt"
+                android:layout_width="fill_parent"
+                android:layout_height="40dp"
+                android:layout_marginBottom="0.5dp"
+                android:background="#ffffff"
+                android:drawableLeft="@drawable/check_unselect"
+                android:gravity="center_vertical"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp"
+                android:text="@string/category_journey" />
+
+            <TextView
+                android:id="@+id/boatingTxt"
+                android:layout_width="fill_parent"
+                android:layout_height="40dp"
+                android:background="#ffffff"
+                android:drawableLeft="@drawable/check_unselect"
+                android:gravity="center_vertical"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp"
+                android:text="@string/category_boating" />
+        </LinearLayout>
+        
+        <Button
+            android:id="@+id/button2"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_below="@+id/layout"
+            android:background="#ffffff"
+            android:clickable="false"
+            android:visibility="gone" />
+
+        <TextView
+            android:id="@+id/selectLocTxt"
+            android:layout_width="fill_parent"
+            android:layout_height="40dp"
+            android:layout_marginBottom="0.5dp"
+            android:layout_alignParentTop="true"
+            android:background="#f5f5f5"
+            android:drawablePadding="10dp"
+            android:drawableRight="@drawable/select_location_gray_icon"
+            android:gravity="right|center_vertical"
+            android:paddingRight="10dp"
+            android:text="@string/select_location"
+            android:textStyle="bold" />
+
+        <LinearLayout
+            android:id="@+id/locationLayout"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/selectLocTxt"
+            android:layout_above="@+id/submitBtn"
+            android:layout_marginTop="10dp"
+            android:background="#D2D2D2"
+            android:orientation="vertical"
+            android:padding="0.5dp"
+            android:clickable="false"
+            android:visibility="visible" >
+
+            <ScrollView
+                android:id="@+id/scrollView1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" >
+
+                <LinearLayout
+                    android:id="@+id/loc_layout"
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:orientation="vertical" >
+
+                    <TextView
+                        android:id="@+id/adilabadTxt"
+                        android:layout_width="fill_parent"
+                        android:layout_height="40dp"
+                        android:layout_marginBottom="0.5dp"
+                        android:background="#ffffff"
+                        android:button="@null"
+                        android:drawableLeft="@drawable/radio_selector"
+                        android:gravity="center_vertical|right"
+                        android:paddingLeft="10dp"
+                        android:paddingRight="10dp"
+                        android:text="@string/location_adilabad" />
+
+                    <TextView
+                        android:id="@+id/hydTxt"
+                        android:layout_width="fill_parent"
+                        android:layout_height="40dp"
+                        android:layout_marginBottom="0.5dp"
+                        android:background="#ffffff"
+                        android:button="@null"
+                        android:drawableLeft="@drawable/radio_selector"
+                        android:gravity="center_vertical|right"
+                        android:paddingLeft="10dp"
+                        android:paddingRight="10dp"
+                        android:text="@string/location_hyderabad" />
+
+                    <TextView
+                        android:id="@+id/karimnagrTxt"
+                        android:layout_width="fill_parent"
+                        android:layout_height="40dp"
+                        android:layout_marginBottom="0.5dp"
+                        android:background="#ffffff"
+                        android:button="@null"
+                        android:drawableLeft="@drawable/radio_selector"
+                        android:gravity="center_vertical|right"
+                        android:paddingLeft="10dp"
+                        android:paddingRight="10dp"
+                        android:text="@string/location_karimnagar" />
+
+                    <TextView
+                        android:id="@+id/khammamTxt"
+                        android:layout_width="fill_parent"
+                        android:layout_height="40dp"
+                        android:layout_marginBottom="0.5dp"
+                        android:background="#ffffff"
+                        android:button="@null"
+                        android:drawableLeft="@drawable/radio_selector"
+                        android:gravity="center_vertical|right"
+                        android:paddingLeft="10dp"
+                        android:paddingRight="10dp"
+                        android:text="@string/location_khammam" />
+
+                    <TextView
+                        android:id="@+id/mbnrTxt"
+                        android:layout_width="fill_parent"
+                        android:layout_height="40dp"
+                        android:layout_marginBottom="0.5dp"
+                        android:background="#ffffff"
+                        android:button="@null"
+                        android:drawableLeft="@drawable/radio_selector"
+                        android:gravity="center_vertical|right"
+                        android:paddingLeft="10dp"
+                        android:paddingRight="10dp"
+                        android:text="@string/location_mbnr" />
+
+                    <TextView
+                        android:id="@+id/medakTxt"
+                        android:layout_width="fill_parent"
+                        android:layout_height="40dp"
+                        android:layout_marginBottom="0.5dp"
+                        android:background="#ffffff"
+                        android:button="@null"
+                        android:drawableLeft="@drawable/radio_selector"
+                        android:gravity="center_vertical|right"
+                        android:paddingLeft="10dp"
+                        android:paddingRight="10dp"
+                        android:text="@string/location_medak" />
+
+                    <TextView
+                        android:id="@+id/nalgondaTxt"
+                        android:layout_width="fill_parent"
+                        android:layout_height="40dp"
+                        android:layout_marginBottom="0.5dp"
+                        android:background="#ffffff"
+                        android:button="@null"
+                        android:drawableLeft="@drawable/radio_selector"
+                        android:gravity="center_vertical|right"
+                        android:paddingLeft="10dp"
+                        android:paddingRight="10dp"
+                        android:text="@string/location_nalgonda" />
+
+                    <TextView
+                        android:id="@+id/nizambadTxt"
+                        android:layout_width="fill_parent"
+                        android:layout_height="40dp"
+                        android:layout_marginBottom="0.5dp"
+                        android:background="#ffffff"
+                        android:button="@null"
+                        android:drawableLeft="@drawable/radio_selector"
+                        android:gravity="center_vertical|right"
+                        android:paddingLeft="10dp"
+                        android:paddingRight="10dp"
+                        android:text="@string/location_nizamabad" />
+
+                    <TextView
+                        android:id="@+id/rangareddyTxt"
+                        android:layout_width="fill_parent"
+                        android:layout_height="40dp"
+                        android:layout_marginBottom="0.5dp"
+                        android:background="#ffffff"
+                        android:button="@null"
+                        android:drawableLeft="@drawable/radio_selector"
+                        android:gravity="center_vertical|right"
+                        android:paddingLeft="10dp"
+                        android:paddingRight="10dp"
+                        android:text="@string/location_rangareddy" />
+
+                    <TextView
+                        android:id="@+id/warangalTxt"
+                        android:layout_width="fill_parent"
+                        android:layout_height="40dp"
+                        android:background="#ffffff"
+                        android:button="@null"
+                        android:drawableLeft="@drawable/radio_selector"
+                        android:gravity="center_vertical|right"
+                        android:paddingLeft="10dp"
+                        android:paddingRight="10dp"
+                        android:text="@string/location_warangal" />
+                </LinearLayout>
+            </ScrollView>
+            <Button
+                android:id="@+id/button1"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:background="#D2D2D2"
+                android:clickable="false" />
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/searchBtn"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/layout"
+            android:layout_marginTop="20dp"
+            android:background="#1d3b64"
+            android:text="@string/category_search"
+            android:textColor="#ffffff" />
+
+        <Button
+            android:id="@+id/submitBtn"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_marginTop="20dp"
+            android:background="#1d3b64"
+            android:text="@string/contactus_submit"
+            android:textColor="#ffffff" />
+    </RelativeLayout>
+
+</LinearLayout>

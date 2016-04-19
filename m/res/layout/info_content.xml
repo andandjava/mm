@@ -1,0 +1,117 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:padding="10dp"
+    android:background="#ffffff"
+    tools:context="com.example.sampleapp.MainActivity" >
+
+    <TextView
+        android:id="@+id/t1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="#000000"
+        android:textStyle="bold"
+        android:text="Tourism Department Toll Free" />
+    <TextView
+        android:layout_width="wrap_content"
+         android:id="@+id/t2"
+         android:layout_below="@+id/t1"
+        android:layout_height="wrap_content"
+        android:textColor="#000000"
+        android:text="tel: +1800-425-46464" />
+    
+    <TextView
+        android:id="@+id/t3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="#000000"
+        android:layout_marginTop="20dp"
+         android:layout_below="@+id/t2"
+        android:textStyle="bold"
+        android:text="Telangana Tourism Development Corporation" />
+    <TextView
+        android:layout_width="wrap_content"
+         android:id="@+id/t4"
+         android:layout_below="@+id/t3"
+        android:layout_height="wrap_content"
+        android:textColor="#000000"
+        android:text="3-5-891, Tourism House
+Himayatnagar, Hyderabad - 500 029,
+Telangana, India." />
+     <TextView
+        android:layout_width="wrap_content"
+         android:id="@+id/t5"
+         android:layout_below="@+id/t4"
+        android:layout_height="wrap_content"
+        android:textColor="#000000"
+        android:text="tel: +91-40-23262151, +91-40-23262152, +91-40-23262153, +91-40-23262154, +91-40-23262157" />
+     <TextView
+        android:layout_width="wrap_content"
+         android:id="@+id/t6"
+         android:layout_below="@+id/t5"
+        android:layout_height="wrap_content"
+        android:textColor="#000000"
+        android:text="E-mail : " />
+     <TextView
+        android:layout_width="wrap_content"
+         android:id="@+id/t7"
+         android:layout_below="@+id/t5"
+         android:layout_toRightOf="@+id/t6"
+         android:layout_marginRight="3dp"
+        android:layout_height="wrap_content"
+        android:textColor="#396A9B"
+        android:text="info@telanganatourism.in" />
+     
+      <TextView
+        android:layout_width="wrap_content"
+         android:id="@+id/t8"
+         android:layout_below="@+id/t7"
+        android:layout_height="wrap_content"
+        android:textColor="#000000"
+        android:text="Website : " />
+     <TextView
+        android:layout_width="wrap_content"
+         android:id="@+id/t9"
+         android:layout_below="@+id/t7"
+         android:layout_toRightOf="@+id/t8"
+         android:layout_marginRight="3dp"
+        android:layout_height="wrap_content"
+        android:textColor="#396A9B"
+        android:text="www.telanganatourism.gov.in/" />
+
+     <TextView
+        android:id="@+id/t10"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="#000000"
+        android:layout_marginTop="20dp"
+         android:layout_below="@+id/t9"
+        android:textStyle="bold"
+        android:text="Telangana Tourism Department" />
+    <TextView
+        android:layout_width="wrap_content"
+         android:id="@+id/t11"
+         android:layout_below="@+id/t10"
+        android:layout_height="wrap_content"
+        android:textColor="#000000"
+        android:text="“D” Block, 3rd Floor, Secretariat
+Hyderabad - 500 022
+Telangana, India." />
+     <TextView
+        android:layout_width="wrap_content"
+         android:id="@+id/t12"
+         android:layout_below="@+id/t11"
+        android:layout_height="wrap_content"
+        android:textColor="#000000"
+        android:text="tel: +61 2 82685533, fax: +61 2 9268 0243"
+        android:visibility="gone" />
+     <TextView
+        android:layout_width="wrap_content"
+         android:id="@+id/t13"
+         android:layout_below="@+id/t12"
+         android:layout_marginRight="3dp"
+        android:layout_height="wrap_content"
+        android:textColor="#396A9B"
+        android:text="info@telanganatourism.in" />
+</RelativeLayout>

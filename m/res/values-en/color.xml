@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <color name="black">#000000</color>
+    <color name="red">#c70c2a</color>
+    <color name="white">#ffffff</color>
+    <color name="read_morebg">#f2f2f2 </color>
+    <color name="hash">#5A5C5C</color>
+    <color name="divider">#d9d9d9</color>
+    <color name="alert_divider">#30b3e4</color>
+    <color name="menu_text">#bebebf</color>
+    <color name="background_tab_pressed">#6633B5E5</color>
+    <color name="order_bg">#dadada</color>
+    <color name="list_view_bg">#BDBDBD</color>
+    <color name="slide_bg">#4f4f4f</color>
+    <color name="form_field">#d8d8d8</color>
+    <color name="hidden">#D1D1D1</color>
+    <color name="list_item_title">#6D6F8C</color>
+    <color name="list_background">#ffffff</color>
+    <color name="list_background_pressed">#fff</color>
+    <color name="list_divider">#d3d3d3</color>
+    <color name="counter_text_bg">#626262</color>
+    <color name="counter_text_color">#c5c4c4</color>
+
+    <item name="transparent" type="color">#00FFFFFF</item>
+    <item name="grey" type="color">#555555</item>
+    <item name="green" type="color">#4499CC00</item>
+    <item name="darkgreen" type="color">#FF669900</item>
+
+    <color name="calendar_header">#999999</color>
+    <color name="date_picker_view_animator">#f2f2f2</color>
+    <color name="line_background">#cccccc</color>
+    <color name="blue">#33b5e5</color>
+    <color name="circle_background">#f2f2f2</color>
+    <color name="darker_blue">#0099CC</color>
+    <color name="done_text_color_normal">#333333</color>
+    <color name="done_text_color_disabled">#CCCCCC</color>
+    <color name="date_picker_text_normal">#FF999999</color>
+    <color name="btn_normal">#838383</color>
+    
+
+</resources>

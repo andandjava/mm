@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent" >
+
+    <LinearLayout
+        android:id="@+id/title1"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="#e13e3e"
+        android:padding="10dp" >
+
+        <TextView
+            android:id="@+id/title"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:gravity="center_horizontal"
+            android:text="Choose Boarding Point"
+            android:textColor="#fff"
+            android:textSize="18dp"
+            android:textStyle="bold" >
+        </TextView>
+    </LinearLayout>
+
+    <ListView
+        android:id="@+id/dialoglist"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/title1"
+        android:divider="#C8C8C8"
+        android:dividerHeight="0.1dp"
+        android:textColor="#000000"
+        android:textStyle="bold" />
+
+</RelativeLayout>
+<!--
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/customdialog"
+    android:orientation="vertical"  android:layout_marginRight="10dp" 
+    android:layout_width="fill_parent" android:gravity="left"  
+    android:layout_height="fill_parent"
+    android:padding="20dp"
+    android:minWidth="300dp" android:background="#ffffff">
+    
+ <ListView
+        android:id="@+id/dialoglist"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content" /> 
+ 
+</LinearLayout>
+-->

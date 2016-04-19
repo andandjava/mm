@@ -1,0 +1,82 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="#ffffff"
+    android:orientation="vertical" >
+
+    <TextView
+        android:id="@+id/textView1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="false"
+        android:layout_centerVertical="false"
+        android:layout_margin="6dp"
+        android:padding="6dp"
+        android:text="Rate this app"
+        android:textColor="#30B3E4"
+        android:textSize="19dp" />
+
+    <View
+        android:id="@+id/view1"
+        android:layout_width="fill_parent"
+        android:layout_height="0.2dp"
+        android:layout_below="@+id/textView1"
+        android:background="#30B3E4" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/view1"
+        android:layout_centerHorizontal="true"
+        android:layout_margin="6dp"
+        android:textSize="17dp"
+        android:padding="5dp"
+        android:text="If you enjoy using this app, would you mind taking a moment to rate it? It won't take more than a minute. Thanks for your support!" />
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textView2"
+        android:layout_centerHorizontal="true"
+        android:background="#EAEAEA"
+        android:layout_marginTop="6dp" >
+
+        <Button
+            android:id="@+id/btn_nothanks"
+            android:layout_width="wrap_content"
+            android:layout_height="50dp"
+            android:layout_marginRight="0.5dp"
+            android:layout_marginTop="0.5dp"
+            android:layout_weight="1"
+            android:background="#ffffff"
+            android:gravity="center_vertical|center_horizontal"
+            android:text="No, thanks"
+            android:textSize="16dp" />
+
+        <Button
+            android:id="@+id/btn_remindlater"
+            android:layout_width="wrap_content"
+            android:layout_height="50dp"
+            android:layout_marginTop="0.5dp"
+            android:layout_weight="1"
+            android:background="#ffffff"
+            android:gravity="center_vertical|center_horizontal"
+            android:text="Remind later"
+            android:textSize="16dp" />
+
+        <Button
+            android:id="@+id/btn_ratenow"
+            android:layout_width="wrap_content"
+            android:layout_height="50dp"
+            android:layout_marginRight="0.5dp"
+            android:layout_marginTop="0.5dp"
+            android:layout_weight="1"
+            android:background="#ffffff"
+            android:gravity="center_vertical|center_horizontal"
+            android:text="Rate now"
+            android:textSize="16dp" />
+
+    </LinearLayout>
+
+</RelativeLayout>

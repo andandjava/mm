@@ -1,0 +1,152 @@
+<android.support.v4.widget.DrawerLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/drawer_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <!-- Framelayout to display Fragments -->
+
+    <FrameLayout
+        android:id="@+id/frame_container"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+    <!-- Listview to display slider menu -->
+
+
+    
+    <include layout="@layout/arabic_side_menu" />
+    
+    <include layout="@layout/arabic_filtermenu" />
+
+    <!--
+         <ListView
+        android:id="@+id/right_drawer"
+        android:layout_width="240dp"
+        android:layout_height="match_parent"
+        android:layout_gravity="end"
+        android:background="@color/list_background"
+        android:choiceMode="singleChoice"
+        android:divider="@color/list_divider"
+        android:dividerHeight="1dp"
+        android:listSelector="@drawable/list_selector" />
+    -->
+
+    <!-- <LinearLayout
+        android:id="@+id/right_drawer"
+        android:layout_width="300dp"
+        android:layout_height="fill_parent"
+        android:layout_gravity="end"
+        android:background="@android:color/white"
+        android:orientation="vertical"
+        android:visibility="visible" >
+        
+        <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_margin="10dp" >
+
+        <TextView
+            android:id="@+id/selectLocation_txt"
+            android:layout_width="wrap_content"
+            android:layout_height="45dp"
+            android:background="@drawable/dropdown"
+            android:drawableLeft="@drawable/select_location_gray_icon"
+            android:drawablePadding="10dp"
+            android:gravity="center_vertical"
+            android:paddingLeft="10dp"
+            android:text="Select Location" />
+
+        <LinearLayout
+            android:id="@+id/layout"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/selectLocation_txt"
+            android:background="#D2D2D2"
+            android:layout_marginTop="10dp"
+            android:padding="0.5dp"
+            android:orientation="vertical" >
+
+            <TextView
+                android:id="@+id/selectCatTxt"
+                android:layout_width="fill_parent"
+                android:layout_height="45dp"
+                android:gravity="center_vertical"
+                android:background="#f5f5f5"
+                android:paddingLeft="10dp"
+                android:layout_marginBottom="0.5dp"
+                android:text="Select Category" />
+            
+            <TextView
+                android:id="@+id/divineDestionationTxt"
+                android:layout_width="fill_parent"
+                android:layout_height="45dp"
+                android:background="@drawable/unselect"
+                android:gravity="center_vertical"
+                android:paddingLeft="10dp"
+                android:layout_marginBottom="0.5dp"
+                android:text="Divine Destination" />
+
+            <TextView
+                android:id="@+id/heritageTxt"
+                android:layout_width="fill_parent"
+                android:layout_height="45dp"
+                android:background="@drawable/unselect"
+                android:gravity="center_vertical"
+                android:paddingLeft="10dp"
+                android:layout_marginBottom="0.5dp"
+                android:text="Heritage Spots" />
+
+            <TextView
+                android:id="@+id/natureTxt"
+                android:layout_width="fill_parent"
+                android:layout_height="45dp"
+                android:background="@drawable/selected"
+                android:gravity="center_vertical"
+                android:paddingLeft="10dp"
+                android:layout_marginBottom="0.5dp"
+                android:text="Nature Discovery" />
+
+            <TextView
+                android:id="@+id/wildlifeTxt"
+                android:layout_width="fill_parent"
+                android:layout_height="45dp"
+                android:background="@drawable/unselect"
+                android:gravity="center_vertical"
+                android:paddingLeft="10dp"
+                android:layout_marginBottom="0.5dp"
+                android:text="Wild Life" />
+
+            <TextView
+                android:id="@+id/journeyTxt"
+                android:layout_width="fill_parent"
+                android:layout_height="45dp"
+                android:background="@drawable/unselect"
+                android:gravity="center_vertical"
+                android:paddingLeft="10dp"
+                android:layout_marginBottom="0.5dp"
+                android:text="Adventure Journeys" />
+            
+            <TextView
+                android:id="@+id/boatingTxt"
+                android:layout_width="fill_parent"
+                android:layout_height="45dp"
+                android:background="@drawable/unselect"
+                android:gravity="center_vertical"
+                android:paddingLeft="10dp"
+                android:text="Boating Units" />
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/searchBtn"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:layout_below="@+id/layout"
+            android:background="#1d3b64"
+            android:textColor="#ffffff"
+            android:text="Search" />
+
+    </RelativeLayout>
+    </LinearLayout> -->
+
+</android.support.v4.widget.DrawerLayout>

@@ -1,0 +1,1085 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/RelativeLayout1"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:id="@+id/RLMain"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true" >
+        
+        <RelativeLayout
+                android:id="@+id/contentLayout"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:background="#EBEBEB" >
+
+                <LinearLayout
+                    android:id="@+id/filterLayout"
+                    android:layout_width="fill_parent"
+                    android:layout_height="110dp"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginBottom="10dp"
+                    android:background="#1D4A74"
+                    android:orientation="horizontal" >
+
+                    <LinearLayout
+                        android:id="@+id/policeLay"
+                        android:layout_width="wrap_content"
+                        android:layout_height="fill_parent"
+                        android:layout_weight="1"
+                        android:background="#245E95"
+                        android:gravity="center_horizontal"
+                        android:orientation="vertical" >
+
+                        <TextView
+                            android:id="@+id/policeBtn"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_vertical|center_horizontal"
+                            android:layout_marginBottom="15dp"
+                            android:layout_marginTop="10dp"
+                            android:background="@drawable/police_icon"
+                            android:gravity="center_vertical" />
+
+                        <TextView
+                            android:id="@+id/txtPolice"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_vertical|center_horizontal"
+                            android:gravity="center_vertical"
+                            android:text="@string/emergency_contact_police"
+                            android:textColor="#ffffff"
+                            android:textSize="13sp" />
+
+                        <TextView
+                            android:id="@+id/txt3"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_vertical|center_horizontal"
+                            android:gravity="center_vertical"
+                            android:text="@string/emergency_contact_tap_to_call"
+                            android:textColor="#B1EFA2"
+                            android:textSize="7dp"
+                            android:textStyle="bold" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/ambulanceLay"
+                        android:layout_width="wrap_content"
+                        android:layout_height="fill_parent"
+                        android:layout_marginLeft="0.5dp"
+                        android:layout_marginRight="0.5dp"
+                        android:layout_weight="0.5"
+                        android:background="#245E95"
+                        android:gravity="center_horizontal"
+                        android:orientation="vertical" >
+
+                        <TextView
+                            android:id="@+id/ambulanceBtn"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_vertical|center_horizontal"
+                            android:layout_marginBottom="15dp"
+                            android:layout_marginTop="15dp"
+                            android:background="@drawable/ambulance_icon"
+                            android:gravity="center_vertical|center_horizontal" />
+
+                        <TextView
+                            android:id="@+id/txtAmbulance"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_vertical|center_horizontal"
+                            android:text="@string/emergency_contact_ambulence"
+                            android:textSize="13sp"
+                            android:textColor="#ffffff" />
+
+                        <TextView
+                            android:id="@+id/txt33"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_vertical|center_horizontal"
+                            android:text="@string/emergency_contact_tap_to_call"
+                            android:textColor="#B1EFA2"
+                            android:textSize="7dp"
+                            android:textStyle="bold" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/fieLay"
+                        android:layout_width="wrap_content"
+                        android:layout_height="fill_parent"
+                        android:layout_weight="0.8"
+                        android:background="#245E95"
+                        android:gravity="center_horizontal"
+                        android:orientation="vertical" >
+
+                        <TextView
+                            android:id="@+id/fireBtn"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_vertical|center_horizontal"
+                            android:layout_marginBottom="15dp"
+                            android:layout_marginTop="20dp"
+                            android:background="@drawable/fire_icon"
+                            android:gravity="center_vertical|center_horizontal" />
+
+                        <TextView
+                            android:id="@+id/txtFire"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_vertical|center_horizontal"
+                            android:text="@string/emergency_contact_fire"
+                            android:textSize="13sp"
+                            android:textColor="#ffffff" />
+
+                        <TextView
+                            android:id="@+id/txt36"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_vertical|center_horizontal"
+                            android:text="@string/emergency_contact_tap_to_call"
+                            android:textColor="#B1EFA2"
+                            android:textSize="7dp"
+                            android:textStyle="bold" />
+                    </LinearLayout>
+                </LinearLayout>
+                
+                
+
+                <ScrollView
+                    android:id="@+id/scrollView1"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/filterLayout" >
+
+                    <LinearLayout
+                        android:id="@+id/root_layout"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:background="#ffffff"
+                        android:layout_marginLeft="6dp"
+                        android:layout_marginRight="6dp"
+                        android:orientation="vertical"
+                        android:visibility="visible" >
+
+                        <RelativeLayout
+                            android:layout_width="fill_parent"
+                            android:layout_height="fill_parent"
+                            android:orientation="vertical" >
+
+                            <RelativeLayout
+                                android:id="@+id/lay1"
+                                android:layout_width="fill_parent"
+                                android:layout_height="wrap_content"
+                                                            android:background="#ffffff"
+                                android:padding="10dp"
+                                android:layout_margin="3dp"
+                                android:orientation="horizontal"
+                                android:visibility="visible" >
+
+                                <TextView
+                                    android:id="@+id/title_1"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_alignParentLeft="true"
+                                    android:layout_marginBottom="5dp"
+                                    android:gravity="center_vertical"
+                                    android:text="Tourism Department Toll Free"
+                                    android:textColor="#000000"
+                                    android:textSize="17sp"
+                                    android:textStyle="bold" />
+
+                                <TextView
+                                    android:id="@+id/tourism_department_phno"
+                                    android:layout_width="fill_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_alignParentLeft="true"
+                                    android:layout_below="@+id/title_1"
+                                    android:layout_centerVertical="true"
+                                    android:layout_marginBottom="21dp"
+                                    android:drawablePadding="10dp"
+                                    android:drawableRight="@drawable/call"
+                                    android:gravity="left|center_vertical"
+                                    android:text="1800-425-46464"
+                                    android:textColor="#616161"
+                                    android:textStyle="bold" />
+                            </RelativeLayout>
+
+
+                            <RelativeLayout
+                                android:id="@+id/lay2"
+                                android:layout_width="fill_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_below="@+id/v1"
+                                android:layout_margin="3dp"
+                                android:orientation="horizontal"
+                                android:visibility="gone" >
+
+                                <TextView
+                                    android:id="@+id/title_2"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_alignParentLeft="true"
+                                    android:layout_marginTop="15dp"
+                                    android:gravity="left|center_vertical|center_horizontal"
+                                    android:text="@string/emergency_contact_railway"
+                                    android:textColor="#000000"
+                                    android:textSize="17dp"
+                                    android:textStyle="bold" />
+
+                                <LinearLayout
+                                    android:id="@+id/railway_enquiry_lay"
+                                    android:layout_width="fill_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_alignParentLeft="true"
+                                    android:layout_below="@+id/title_2"
+                                    android:orientation="vertical"
+                                    android:visibility="visible" >
+
+                                    <TextView
+                                        android:id="@+id/railway_enquiry_pho1"
+                                        android:layout_width="fill_parent"
+                                        android:layout_height="wrap_content"
+                                        android:layout_alignParentRight="true"
+                                        android:drawablePadding="10dp"
+                                        android:layout_marginTop="5dp"
+                                        android:drawableRight="@drawable/call"
+                                        android:gravity="left|center_vertical"
+                                        android:text="131"
+                                        android:textColor="#616161"
+                                        android:textStyle="bold" />
+
+                                    <TextView
+                                        android:id="@+id/railway_enquiry_pho2"
+                                        android:layout_width="fill_parent"
+                                        android:layout_height="wrap_content"
+                                        android:layout_alignParentRight="true"
+                                        android:drawableRight="@drawable/call"
+                                        android:gravity="left|center_vertical"
+                                        android:text="135"
+                                        android:visibility="gone"
+                                        android:textColor="#616161"
+                                        android:textStyle="bold" />
+                                </LinearLayout>
+                            </RelativeLayout>
+
+
+                            <RelativeLayout
+                                android:id="@+id/lay3"
+                                android:layout_width="fill_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_below="@+id/v2"
+                                android:layout_margin="3dp"
+                                android:orientation="horizontal"
+                                android:visibility="gone" >
+
+                                <TextView
+                                    android:id="@+id/electricity_complaint_title_1"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_alignParentLeft="true"
+                                    android:layout_marginTop="10dp"
+                                    android:gravity="left|center_vertical"
+                                    android:text="@string/emergency_contact_electricity"
+                                    android:textColor="#000000"
+                                    android:textSize="17dp"
+                                    android:textStyle="bold" />
+
+                                <TextView
+                                    android:id="@+id/electricity_complaint_title_1_pho"
+                                    android:layout_width="fill_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_alignParentLeft="true"
+                                    android:layout_below="@+id/electricity_complaint_title_1"
+                                    android:layout_marginBottom="6dp"
+                                    android:drawablePadding="10dp"
+                                    android:drawableRight="@drawable/call"
+                                    android:gravity="left|center_vertical"
+                                    android:text="@string/emergency_contact_electricity_number"
+                                    android:textColor="#616161"
+                                    android:textStyle="bold" />
+                            </RelativeLayout>
+
+
+                            <RelativeLayout
+                                android:id="@+id/lay4"
+                                android:layout_width="fill_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_below="@+id/v3"
+                                android:layout_margin="3dp"
+                                android:orientation="horizontal"
+                                android:visibility="gone" >
+
+                                <TextView
+                                    android:id="@+id/crime_stopper_title_1"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_alignParentLeft="true"
+                                    android:layout_marginTop="10dp"
+                                    android:gravity="left|center_vertical"
+                                    android:text="@string/emergency_contact_crime"
+                                    android:textColor="#000000"
+                                    android:textSize="17dp"
+                                    android:textStyle="bold" />
+
+                                <TextView
+                                    android:id="@+id/crime_stopper_1_pho"
+                                    android:layout_width="fill_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_alignParentLeft="true"
+                                    android:layout_below="@+id/crime_stopper_title_1"
+                                    android:layout_marginBottom="6dp"
+                                    android:drawablePadding="10dp"
+                                    android:drawableRight="@drawable/call"
+                                    android:gravity="left|center_vertical"
+                                    android:text="@string/emergency_contact_crime_number"
+                                    android:textColor="#616161"
+                                    android:textStyle="bold" />
+                            </RelativeLayout>
+
+
+                            <RelativeLayout
+                                android:id="@+id/lay5"
+                                android:layout_width="fill_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_below="@+id/v4"
+                                android:layout_margin="3dp"
+                                android:orientation="horizontal"
+                                android:visibility="gone" >
+
+                                <TextView
+                                    android:id="@+id/traffic_help_title_1"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_alignParentLeft="true"
+                                    android:layout_marginTop="10dp"
+                                    android:gravity="left|center_vertical"
+                                    android:text="@string/emergency_contact_traffic"
+                                    android:textColor="#000000"
+                                    android:textSize="17dp"
+                                    android:textStyle="bold" />
+
+                                <TextView
+                                    android:id="@+id/traffic_help_1_pho"
+                                    android:layout_width="fill_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_alignParentLeft="true"
+                                    android:layout_below="@+id/traffic_help_title_1"
+                                    android:layout_marginBottom="6dp"
+                                    android:drawablePadding="10dp"
+                                    android:drawableRight="@drawable/call"
+                                    android:gravity="left|center_vertical"
+                                    android:text="@string/emergency_contact_traffic_number"
+                                    android:textColor="#616161"
+                                    android:textStyle="bold" />
+                            </RelativeLayout>
+
+                            <RelativeLayout
+                                android:id="@+id/lay6"
+                                android:layout_width="fill_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_below="@+id/v5"
+                                android:layout_margin="3dp"
+                                android:orientation="horizontal"
+                                android:visibility="gone" >
+
+                                <TextView
+                                    android:id="@+id/apollo_ambulance_help_title_1"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_alignParentLeft="true"
+                                    android:layout_marginTop="6dp"
+                                    android:gravity="left|center_vertical"
+                                    android:text="@string/emergency_contact_appollo"
+                                    android:textColor="#000000"
+                                    android:textSize="17dp"
+                                    android:textStyle="bold" />
+
+                                <TextView
+                                    android:id="@+id/apollo_ambulance_1_pho"
+                                    android:layout_width="fill_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_alignParentLeft="true"
+                                    android:layout_below="@+id/apollo_ambulance_help_title_1"
+                                    android:layout_marginBottom="6dp"
+                                    android:drawablePadding="10dp"
+                                    android:drawableRight="@drawable/call"
+                                    android:gravity="left|center_vertical"
+                                    android:text="@string/emergency_contact_appollo_number"
+                                    android:textColor="#616161"
+                                    android:textStyle="bold" />
+                            </RelativeLayout>
+
+
+                            <RelativeLayout
+                                android:id="@+id/lay7"
+                                android:layout_width="fill_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_below="@+id/v6"
+                                android:layout_margin="3dp"
+                                android:orientation="horizontal"
+                                android:visibility="gone" >
+
+                                <TextView
+                                    android:id="@+id/osmania_general_hospital_title_2"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_alignParentLeft="true"
+                                    android:layout_marginTop="10dp"
+                                    android:gravity="left|center_vertical"
+                                    android:text="@string/emergency_contact_osmania"
+                                    android:textColor="#000000"
+                                    android:textSize="17dp"
+                                    android:textStyle="bold" />
+
+                                <LinearLayout
+                                    android:id="@+id/osmania_general_hospital_lay"
+                                    android:layout_width="fill_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_alignParentLeft="true"
+                                    android:layout_below="@+id/osmania_general_hospital_title_2"
+                                    android:orientation="vertical"
+                                    android:visibility="visible" >
+
+                                    <TextView
+                                        android:id="@+id/osmania_general_hospital_pho1"
+                                        android:layout_width="fill_parent"
+                                        android:layout_height="wrap_content"
+                                        android:layout_alignParentRight="true"
+                                        android:drawablePadding="10dp"
+                                        android:drawableRight="@drawable/call"
+                                        android:gravity="left|center_vertical"
+                                        android:text="@string/emergency_contact_osmania_number"
+                                        android:textColor="#616161"
+                                        android:textStyle="bold" />
+
+                                    <TextView
+                                        android:id="@+id/osmania_general_hospital_pho2"
+                                        android:layout_width="fill_parent"
+                                        android:layout_height="wrap_content"
+                                        android:layout_alignParentRight="true"
+                                        android:layout_marginBottom="6dp"
+                                        android:drawablePadding="10dp"
+                                        android:drawableRight="@drawable/call"
+                                        android:gravity="left|center_vertical"
+                                        android:visibility="gone"
+                                        android:text="040-24600146"
+                                        android:textColor="#616161"
+                                        android:textStyle="bold" />
+                                </LinearLayout>
+                            </RelativeLayout>
+
+                            <RelativeLayout
+                                android:id="@+id/lay8"
+                                android:layout_width="fill_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_below="@+id/v7"
+                                android:layout_margin="3dp"
+                                android:orientation="horizontal"
+                                android:visibility="gone" >
+
+                                <TextView
+                                    android:id="@+id/gandhi_hospital_title_1"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_alignParentLeft="true"
+                                    android:layout_marginTop="10dp"
+                                    android:gravity="left|center_vertical"
+                                    android:text="@string/emergency_contact_gandhi"
+                                    android:textColor="#000000"
+                                    android:textSize="17dp"
+                                    android:textStyle="bold" />
+
+                                <TextView
+                                    android:id="@+id/gandhi_hospital_1_pho"
+                                    android:layout_width="fill_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_alignParentLeft="true"
+                                    android:layout_below="@+id/gandhi_hospital_title_1"
+                                    android:layout_marginBottom="6dp"
+                                    android:drawablePadding="10dp"
+                                    android:drawableRight="@drawable/call"
+                                    android:gravity="left|center_vertical"
+                                    android:text="@string/emergency_contact_gandhi_number"
+                                    android:textColor="#616161"
+                                    android:textStyle="bold" />
+                            </RelativeLayout>
+
+
+                            <RelativeLayout
+                                android:id="@+id/lay9"
+                                android:layout_width="fill_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_below="@+id/v8"
+                                android:layout_margin="3dp"
+                                android:orientation="horizontal"
+                                android:visibility="gone" >
+
+                                <TextView
+                                    android:id="@+id/government_ent_hospital_title_2"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_alignParentLeft="true"
+                                    android:layout_marginTop="10dp"
+                                    android:gravity="left|center_vertical"
+                                    android:text="Osmania General Hospital"
+                                    android:textColor="#000000"
+                                    android:textSize="17dp"
+                                    android:textStyle="bold" />
+
+                                <LinearLayout
+                                    android:id="@+id/government_ent_hospital_lay"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_alignParentRight="true"
+                                    android:layout_margin="3dp"
+                                    android:orientation="vertical"
+                                    android:visibility="visible" >
+
+                                    <TextView
+                                        android:id="@+id/government_ent_hospital_pho1"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:layout_alignParentRight="true"
+                                        android:drawablePadding="10dp"
+                                        android:gravity="left|center_vertical"
+                                        android:text="040-23538846"
+                                        android:textColor="#616161"
+                                        android:textStyle="bold" />
+
+                                    <TextView
+                                        android:id="@+id/government_ent_hospital_pho2"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:layout_alignParentRight="true"
+                                        android:drawablePadding="10dp"
+                                        android:gravity="left|center_vertical"
+                                        android:text="040-24600146"
+                                        android:textColor="#616161"
+                                        android:textStyle="bold" />
+                                </LinearLayout>
+                            </RelativeLayout>
+
+                            <RelativeLayout
+                                android:id="@+id/lay10"
+                                android:layout_width="fill_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_below="@+id/v9"
+                                android:layout_margin="3dp"
+                                android:orientation="horizontal"
+                                android:visibility="gone" >
+
+                                <TextView
+                                    android:id="@+id/government_chest_hospital_title_2"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_alignParentLeft="true"
+                                    android:layout_marginTop="10dp"
+                                    android:gravity="left|center_vertical"
+                                    android:text="@string/emergency_contact_government_hospital"
+                                    android:textColor="#000000"
+                                    android:textSize="17dp"
+                                    android:textStyle="bold" />
+
+                                <LinearLayout
+                                    android:id="@+id/government_chest_hospital_lay"
+                                    android:layout_width="fill_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_alignParentLeft="true"
+                                    android:layout_below="@+id/government_chest_hospital_title_2"
+                                    android:orientation="vertical"
+                                    android:visibility="visible" >
+
+                                    <TextView
+                                        android:id="@+id/government_chest_hospital_pho1"
+                                        android:layout_width="fill_parent"
+                                        android:layout_height="wrap_content"
+                                        android:layout_alignParentRight="true"
+                                        android:drawablePadding="10dp"
+                                        android:drawableRight="@drawable/call"
+                                        android:gravity="left|center_vertical"
+                                        android:text="@string/emergency_contact_government_hospital_number"
+                                        android:textColor="#616161"
+                                        android:textStyle="bold" />
+
+                                    <TextView
+                                        android:id="@+id/government_chest_hospital_pho2"
+                                        android:layout_width="fill_parent"
+                                        android:layout_height="wrap_content"
+                                        android:layout_alignParentRight="true"
+                                        android:layout_marginBottom="21dp"
+                                        android:drawablePadding="10dp"
+                                        android:drawableRight="@drawable/call"
+                                        android:gravity="left|center_vertical"
+                                        android:visibility="gone"
+                                        android:text="040-23814422"
+                                        android:textColor="#616161"
+                                        android:textStyle="bold" />
+
+                                    <TextView
+                                        android:id="@+id/government_chest_hospital_pho3"
+                                        android:layout_width="fill_parent"
+                                        android:layout_height="wrap_content"
+                                        android:layout_alignParentRight="true"
+                                        android:layout_marginBottom="21dp"
+                                        android:drawablePadding="10dp"
+                                        android:drawableRight="@drawable/call"
+                                        android:gravity="left|center_vertical"
+                                        android:visibility="gone"
+                                        android:text="040-23814423"
+                                        android:textColor="#616161"
+                                        android:textStyle="bold" />
+
+                                    <TextView
+                                        android:id="@+id/government_chest_hospital_pho4"
+                                        android:layout_width="fill_parent"
+                                        android:layout_height="wrap_content"
+                                        android:layout_alignParentRight="true"
+                                        android:drawablePadding="10dp"
+                                        android:drawableRight="@drawable/call"
+                                        android:gravity="left|center_vertical"
+                                        android:visibility="gone"
+                                        android:text="040-23814424"
+                                        android:textColor="#616161"
+                                        android:textStyle="bold" />
+                                </LinearLayout>
+                            </RelativeLayout>
+
+                            <RelativeLayout
+                                android:id="@+id/lay11"
+                                android:layout_width="fill_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_below="@+id/v10"
+                                android:layout_margin="3dp"
+                                android:orientation="horizontal"
+                                android:visibility="gone" >
+
+                                <TextView
+                                    android:id="@+id/government_ent_hospital_title_22"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_alignParentLeft="true"
+                                    android:layout_marginTop="10dp"
+                                    android:gravity="left|center_vertical"
+                                    android:text="@string/emergency_contact_government_ent_hospital"
+                                    android:textColor="#000000"
+                                    android:textSize="17dp"
+                                    android:textStyle="bold" />
+
+                                <LinearLayout
+                                    android:id="@+id/government_ent_hospital_lay2"
+                                    android:layout_width="fill_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_alignParentLeft="true"
+                                    android:layout_below="@+id/government_ent_hospital_title_22"
+                                    android:orientation="vertical"
+                                    android:visibility="visible" >
+
+                                    <TextView
+                                        android:id="@+id/government_ent_hospital_pho12"
+                                        android:layout_width="fill_parent"
+                                        android:layout_height="wrap_content"
+                                        android:layout_alignParentLeft="true"
+                                        android:drawablePadding="10dp"
+                                        android:drawableRight="@drawable/call"
+                                        android:gravity="left|center_vertical"
+                                        android:text="@string/emergency_contact_government_ent_hospital_number"
+                                        android:textColor="#616161"
+                                        android:textStyle="bold" />
+
+                                    <TextView
+                                        android:id="@+id/government_ent_hospital_pho22"
+                                        android:layout_width="fill_parent"
+                                        android:layout_height="wrap_content"
+                                        android:layout_alignParentRight="true"
+                                        android:layout_marginBottom="6dp"
+                                        android:drawablePadding="10dp"
+                                        android:drawableRight="@drawable/call"
+                                        android:gravity="left|center_vertical"
+                                        android:visibility="gone"
+                                        android:text="040-24742329​​​​"
+                                        android:textColor="#616161"
+                                        android:textStyle="bold" />
+                                </LinearLayout>
+                            </RelativeLayout>
+                            
+                            <RelativeLayout
+                                android:id="@+id/lay12"
+                                android:layout_width="fill_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_below="@+id/v11"
+                                android:layout_margin="3dp"
+                                android:orientation="horizontal"
+                                android:visibility="gone" >
+
+                                <TextView
+                                    android:id="@+id/women_protection_cell"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_alignParentLeft="true"
+                                    android:layout_marginTop="10dp"
+                                    android:gravity="left|center_vertical"
+                                    android:text="@string/emergency_contact_women_protection_cell"
+                                    android:textColor="#000000"
+                                    android:textSize="17dp"
+                                    android:textStyle="bold" />
+
+                                <LinearLayout
+                                    android:id="@+id/women_protection_cell_lay"
+                                    android:layout_width="fill_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_alignParentLeft="true"
+                                    android:layout_below="@+id/women_protection_cell"
+                                    android:orientation="vertical"
+                                    android:visibility="visible" >
+
+                                    <TextView
+                                        android:id="@+id/women_protection_cell_txt"
+                                        android:layout_width="fill_parent"
+                                        android:layout_height="wrap_content"
+                                        android:layout_alignParentLeft="true"
+                                        android:drawablePadding="10dp"
+                                        android:drawableRight="@drawable/call"
+                                        android:gravity="left|center_vertical"
+                                        android:text="@string/emergency_contact_women_protection_cell_number"
+                                        android:textColor="#616161"
+                                        android:textStyle="bold" />
+
+                                </LinearLayout>
+                            </RelativeLayout>
+                            
+                            <RelativeLayout
+                                android:id="@+id/lay13"
+                                android:layout_width="fill_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_below="@+id/lay12"
+                                android:layout_margin="3dp"
+                                android:orientation="horizontal"
+                                android:visibility="gone" >
+
+                                <TextView
+                                    android:id="@+id/child_line"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_alignParentLeft="true"
+                                    android:layout_marginTop="10dp"
+                                    android:gravity="left|center_vertical"
+                                    android:text="@string/emergency_contact_child_line"
+                                    android:textColor="#000000"
+                                    android:textSize="17dp"
+                                    android:textStyle="bold" />
+
+                                <LinearLayout
+                                    android:id="@+id/child_line_lay"
+                                    android:layout_width="fill_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_alignParentLeft="true"
+                                    android:layout_below="@+id/child_line"
+                                    android:orientation="vertical"
+                                    android:visibility="visible" >
+
+                                    <TextView
+                                        android:id="@+id/child_line_txt"
+                                        android:layout_width="fill_parent"
+                                        android:layout_height="wrap_content"
+                                        android:layout_alignParentLeft="true"
+                                        android:drawablePadding="10dp"
+                                        android:drawableRight="@drawable/call"
+                                        android:gravity="left|center_vertical"
+                                        android:text="@string/emergency_contact_child_line_number"
+                                        android:textColor="#616161"
+                                        android:textStyle="bold" />
+
+                                </LinearLayout>
+                            </RelativeLayout>
+
+                        </RelativeLayout>
+
+                        <LinearLayout
+                            android:id="@+id/health_emergency_lay"
+                            android:layout_width="fill_parent"
+                            android:layout_height="fill_parent"
+                            android:layout_margin="3dp"
+                            android:background="@android:color/white"
+                            android:orientation="vertical" >
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:id="@+id/police_emergency_lay"
+                            android:layout_width="fill_parent"
+                            android:layout_height="fill_parent"
+                            android:layout_margin="3dp"
+                            android:background="@android:color/white"
+                            android:orientation="vertical"
+                            android:visibility="gone" >
+                        </LinearLayout>
+                    </LinearLayout>
+                    <!--
+                    <LinearLayout
+                        android:layout_width="fill_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="vertical"
+                        android:visibility="gone" >
+
+                        <LinearLayout
+                            android:id="@+id/llay1"
+                            android:layout_width="fill_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_margin="10dp"
+                            android:background="@drawable/msg_bgs"
+                            android:orientation="vertical" >
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:orientation="vertical"
+                                android:padding="15dp" >
+
+                                <TextView
+                                    android:id="@+id/textView4"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="Nearest Police Station"
+                                    android:textColor="#245E95"
+                                    android:textSize="17dp"
+                                    android:textStyle="bold" />
+                            </LinearLayout>
+
+                            <TextView
+                                android:id="@+id/textView8"
+                                android:layout_width="fill_parent"
+                                android:layout_height="0.5dp"
+                                android:background="#E5E5E5" />
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:padding="15dp" >
+
+                                <TextView
+                                    android:id="@+id/textView5"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginRight="30dp"
+                                    android:text="ADDRESS"
+                                    android:textColor="#000000"
+                                    android:textSize="16dp"
+                                    android:textStyle="bold" />
+
+                                <LinearLayout
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:orientation="vertical" >
+
+                                    <TextView
+                                        android:id="@+id/titleTxt"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:layout_marginBottom="5dp"
+                                        android:text="Narayanguda Police Station"
+                                        android:textColor="#2F5F8F"
+                                        android:textSize="16dp" />
+
+                                    <TextView
+                                        android:id="@+id/addrTxt"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:text="YMCA X Road, Narayanguda, Hyderabad, Telangana 500027 "
+                                        android:textColor="#000" />
+                                </LinearLayout>
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:padding="15dp" >
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginRight="30dp"
+                                    android:text="Phone No"
+                                    android:textColor="#000"
+                                    android:textSize="16dp"
+                                    android:textStyle="bold" />
+
+                                <TextView
+                                    android:id="@+id/phoneTxt"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="040-23765489"
+                                    android:textColor="#000"
+                                    android:textSize="16dp" />
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:padding="10dp" >
+
+                                <TextView
+                                    android:id="@+id/button4"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="50dp"
+                                    android:layout_margin="5dp"
+                                    android:layout_weight="1"
+                                    android:background="#369321"
+                                    android:drawableLeft="@drawable/call_icon"
+                                    android:drawablePadding="5dp"
+                                    android:gravity="center_horizontal"
+                                    android:padding="15dp"
+                                    android:text="Call"
+                                    android:textColor="@android:color/white"
+                                    android:textSize="17dp"
+                                    android:textStyle="bold" />
+
+                                <TextView
+                                    android:id="@+id/button5"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="50dp"
+                                    android:layout_margin="5dp"
+                                    android:layout_weight="1"
+                                    android:background="#4385F5"
+                                    android:drawableLeft="@drawable/get_directions_icon"
+                                    android:drawablePadding="5dp"
+                                    android:gravity="center_horizontal"
+                                    android:padding="15dp"
+                                    android:text="Get Directions"
+                                    android:textColor="@android:color/white"
+                                    android:textSize="17dp"
+                                    android:textStyle="bold" />
+
+                            </LinearLayout>
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:id="@+id/llay2"
+                            android:layout_width="fill_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@+id/llay1"
+                            android:orientation="vertical"
+                            android:padding="20dp"
+                            android:visibility="gone" >
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:orientation="vertical"
+                                android:padding="10dp" >
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="Nearest Healthcare Facility"
+                                    android:textColor="#000000"
+                                    android:textSize="18sp"
+                                    android:textStyle="bold" />
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:padding="10dp" >
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginRight="20dp"
+                                    android:text="Address : "
+                                    android:textColor="#000"
+                                    android:textSize="16dp" />
+
+                                <LinearLayout
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:orientation="vertical" >
+
+                                    <TextView
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:text="Apollo Emergency Center"
+                                        android:textAppearance="?android:attr/textAppearanceMedium"
+                                        android:textColor="#000"
+                                        android:textSize="16dp" />
+
+                                    <TextView
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:text="Old MLA Quarters, Basheerbagh Hyderabad, Telangana 500027 " />
+                                </LinearLayout>
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:padding="10dp" >
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginRight="20dp"
+                                    android:text="Phone No : "
+                                    android:textColor="#000"
+                                    android:textSize="16dp" />
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="040-23765489"
+                                    android:textAppearance="?android:attr/textAppearanceMedium"
+                                    android:textColor="#000"
+                                    android:textSize="16dp" />
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content" >
+
+                                <TextView
+                                    android:layout_width="100dp"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginLeft="10dp"
+                                    android:layout_marginRight="5dp"
+                                    android:background="@drawable/btn_shape_contact"
+                                    android:gravity="center_horizontal"
+                                    android:text="Call"
+                                    android:textColor="@android:color/white"
+                                    android:textSize="18dp" />
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:background="@drawable/btn_shape_contact"
+                                    android:gravity="center_horizontal"
+                                    android:paddingLeft="20dp"
+                                    android:paddingRight="20dp"
+                                    android:text="Get Directions"
+                                    android:textColor="@android:color/white"
+                                    android:textSize="18dp" />
+                            </LinearLayout>
+                        </LinearLayout>
+                    </LinearLayout>
+                    -->
+                </ScrollView>
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:layout_below="@+id/scrollView1"
+                    android:background="#EBEBEB"
+                    android:orientation="vertical" >
+
+                </LinearLayout>
+
+            </RelativeLayout>
+
+    </RelativeLayout>
+    
+    
+
+</RelativeLayout>

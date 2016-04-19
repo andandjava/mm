@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical" >
+
+    <TextView
+        android:id="@+id/engTxt"
+        android:layout_width="200dp"
+        android:layout_height="45dp"
+        android:layout_marginBottom="0.5dp"
+        android:background="#ffffff"
+        android:button="@null"
+        android:drawableRight="@drawable/check_unselect"
+        android:gravity="center_vertical|left"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+        android:text="@string/radio_eng" />
+
+    <TextView
+        android:id="@+id/teluTxt"
+        android:layout_width="200dp"
+        android:layout_height="45dp"
+        android:layout_marginBottom="0.5dp"
+        android:background="#ffffff"
+        android:button="@null"
+        android:drawableRight="@drawable/check_unselect"
+        android:gravity="center_vertical|left"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+        android:text="@string/radio_tel" />
+
+    <TextView
+        android:id="@+id/hindiTxt"
+        android:layout_width="200dp"
+        android:layout_height="45dp"
+        android:layout_marginBottom="0.5dp"
+        android:background="#ffffff"
+        android:button="@null"
+        android:drawableRight="@drawable/check_unselect"
+        android:gravity="center_vertical|left"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+        android:text="@string/radio_hin" />
+
+    <TextView
+        android:id="@+id/urduTxt"
+        android:layout_width="200dp"
+        android:layout_height="45dp"
+        android:layout_marginBottom="0.5dp"
+        android:background="#ffffff"
+        android:button="@null"
+        android:drawableRight="@drawable/check_unselect"
+        android:gravity="center_vertical|left"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+        android:text="@string/radio_urd" />
+
+</LinearLayout>

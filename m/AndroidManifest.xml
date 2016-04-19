@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.telanganatourism.android.phase2"
+    android:versionCode="1"
+    android:versionName="1.0" >
+
+    <uses-sdk
+        android:minSdkVersion="14"
+        android:targetSdkVersion="18" />
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.VIBRATE" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <uses-permission android:name="android.permission.CALL_PHONE" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/telanganalogo"
+        android:label="@string/app_name"
+        android:largeHeap="true"
+        android:theme="@style/AppTheme" >
+        <activity
+            android:name="com.telanganatourism.android.phase2.PaymentSuccessActivity"
+            android:label="payment success"
+            android:screenOrientation="portrait" >
+            <intent-filter>
+                <data
+                    android:host="@string/hostname"
+                    android:scheme="com.telanganatourism.android.phase2" />
+
+                <action android:name="android.intent.action.VIEW" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+                <category android:name="android.intent.category.BROWSABLE" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.telanganatourism.android.phase2.SplashScreen"
+            android:label="@string/app_name"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.Wallpaper.NoTitleBar.Fullscreen" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="MainActivity"
+            android:configChanges="locale"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="DetailScreen1"
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.TranslucentActionBar.ActionBar.Overlay" >
+        </activity>
+        <activity
+            android:name="ContactUs"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="SettingsActivity"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="SubFragmentActivity"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="ReadmoreActivity"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="HotelBookingActivity"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="HotelBookingConfirm"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="PaymentScreen"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="HotelBookingSuccess"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="PackageListing"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="SeatSelection"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="PackageBookingSuccess"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="Package_Booking"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="SeatSelctionWebview"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="PackageTouristDetails"
+            android:screenOrientation="portrait" >
+        </activity>
+
+        <service
+            android:name="com.telanganatourism.android.phase2.backgroundservice.BackgroundService"
+            android:enabled="true" />
+        <service
+            android:name="com.telanganatourism.android.phase2.backgroundservice.TrackingService"
+            android:enabled="true" />
+        <service
+            android:name="com.telanganatourism.android.phase2.backgroundservice.UpdatingServices"
+            android:enabled="true" />
+    </application>
+
+</manifest>

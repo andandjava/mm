@@ -1,0 +1,282 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_marginBottom="10dp"
+    android:background="@drawable/background1"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:id="@+id/roomtypeLayout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="10dp" >
+
+        <TextView
+            android:id="@+id/textView4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="10dp"
+            android:text="@string/room_type"
+            android:textColor="#838383"
+            android:textSize="16sp" />
+
+        <TextView
+            android:id="@+id/selectRoomTypeBtn1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:padding="8dp"
+            android:text="Select room type"
+            android:textColor="@color/black"
+            android:textSize="16sp" />
+    </RelativeLayout>
+
+    <View
+        android:id="@+id/view5"
+        android:layout_width="fill_parent"
+        android:layout_height="1dp"
+        android:background="#DCDCDC" />
+
+    <RelativeLayout
+        android:id="@+id/noOfLayout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/view5"
+        android:padding="10dp" >
+
+        <TextView
+            android:id="@+id/noOfRoomsTxt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginBottom="5dp"
+            android:layout_marginRight="10dp"
+            android:text="@string/no_of_rooms"
+            android:textColor="#838383"
+            android:textSize="16sp" />
+
+        <EditText
+            android:id="@+id/noOfRoomsEdt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:background="@drawable/borderbg_1"
+            android:drawablePadding="20dp"
+            android:hint="Enter Number"
+            android:inputType="number"
+            android:padding="8dp"
+            android:text=""
+            android:textColor="@color/black"
+            android:textSize="12sp"
+            android:visibility="gone" 
+            />
+
+        
+        <RelativeLayout 
+             android:id="@+id/Rlayout_spinner"
+            android:layout_width="100dp"
+            android:layout_height="40dp"
+            android:layout_alignParentRight="true"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:background="@drawable/borderbg_1"
+           android:padding="2dp" >
+
+        <EditText
+            android:id="@+id/noOfRoomSpnr"
+            android:layout_width="fill_parent"
+            android:layout_height="40dp"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:background="@drawable/borderbg_plan"
+            android:gravity="center_horizontal"
+            android:inputType="number"
+            android:maxLength="2"
+            android:padding="2dp"
+            android:singleLine="true"
+            android:textColor="@color/black"
+            android:textSize="16sp" />
+
+        
+        </RelativeLayout>
+        
+    </RelativeLayout>
+
+    <View
+        android:id="@+id/view6"
+        android:layout_width="fill_parent"
+        android:layout_height="1dp"
+        android:layout_marginBottom="5dp"
+        android:background="#DCDCDC" />
+
+    <RelativeLayout
+        android:id="@+id/roomsLayout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="10dp" >
+
+        <TextView
+            android:id="@+id/textView_room"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginBottom="5dp"
+            android:text="ROOM"
+            android:textColor="#838383"
+            android:textSize="16sp"
+            android:visibility="gone" />
+
+        <LinearLayout
+            android:id="@+id/adultLay"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_marginLeft="10dp"
+            android:orientation="vertical" >
+
+            <TextView
+                android:id="@+id/text_adult"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginBottom="2dp"
+                android:text="@string/adults"
+                android:textSize="9sp" />
+
+            <LinearLayout
+                android:layout_width="120dp"
+                android:layout_height="50dp"
+                android:background="@drawable/background_c"
+                android:padding="5dp" >
+
+                <Button
+                    android:id="@+id/adult_minus_btn1"
+                    android:layout_width="35dp"
+                    android:layout_height="fill_parent"
+                    android:layout_gravity="center_vertical"
+                    android:layout_weight="1"
+                    android:background="#ffffff"
+                    android:gravity="center_vertical|center_horizontal"
+                    android:text="-"
+                    android:textSize="16dp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/adult_val1"
+                    android:layout_width="35dp"
+                    android:layout_height="fill_parent"
+                    android:layout_gravity="center_vertical"
+                    android:layout_weight="1"
+                    android:gravity="center_vertical|center_horizontal"
+                    android:text="0"
+                    android:textColor="@color/black"
+                    android:textSize="12sp" />
+
+                <Button
+                    android:id="@+id/adult_plus_btn1"
+                    android:layout_width="35dp"
+                    android:layout_height="fill_parent"
+                    android:layout_gravity="center_vertical"
+                    android:layout_weight="1"
+                    android:background="#ffffff"
+                    android:gravity="center_vertical|center_horizontal"
+                    android:text="+"
+                    android:textSize="16dp"
+                    android:textStyle="bold" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/childLay"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_marginLeft="10dp"
+            android:layout_toLeftOf="@+id/equal"
+            android:orientation="vertical"
+            android:paddingRight="10dp" >
+
+            <TextView
+                android:id="@+id/text_child"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginBottom="2dp"
+                android:text="@string/children"
+                android:textSize="9sp" />
+
+            <LinearLayout
+                android:layout_width="120dp"
+                android:layout_height="50dp"
+                android:background="@drawable/background_c"
+                android:padding="5dp" >
+
+                <Button
+                    android:id="@+id/child_minus_btn1"
+                    android:layout_width="35dp"
+                    android:layout_height="fill_parent"
+                    android:layout_gravity="center_vertical"
+                    android:layout_weight="1"
+                    android:background="#ffffff"
+                    android:gravity="center_vertical|center_horizontal"
+                    android:text="-"
+                    android:textSize="16dp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/child_val1"
+                    android:layout_width="35dp"
+                    android:layout_height="fill_parent"
+                    android:layout_gravity="center_vertical"
+                    android:layout_weight="1"
+                    android:gravity="center_vertical|center_horizontal"
+                    android:text="0"
+                    android:textColor="@color/black"
+                    android:textSize="12sp" />
+
+                <Button
+                    android:id="@+id/child_plus_btn1"
+                    android:layout_width="35dp"
+                    android:layout_height="fill_parent"
+                    android:layout_gravity="center_vertical"
+                    android:layout_weight="1"
+                    android:background="#ffffff"
+                    android:gravity="center_vertical|center_horizontal"
+                    android:text="+"
+                    android:textSize="16dp"
+                    android:textStyle="bold" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/equal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="5dp"
+            android:layout_toLeftOf="@+id/roomsResult_val1"
+            android:paddingTop="5dp"
+            android:text="="
+            android:textColor="#838383"
+            android:textSize="18dp"
+            android:visibility="gone" />
+
+        <TextView
+            android:id="@+id/roomsResult_val1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_marginTop="5dp"
+            android:paddingLeft="5dp"
+            android:paddingTop="10dp"
+            android:text="0"
+            android:textColor="#838383"
+            android:textSize="18dp"
+            android:visibility="gone" />
+    </RelativeLayout>
+
+</LinearLayout>

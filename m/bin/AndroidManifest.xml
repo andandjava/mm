@@ -1,0 +1,84 @@
+<manifest xmlns:android="http://schemas.android.com/apk/res/android" android:versionCode="1" android:versionName="1.0" package="com.telanganatourism.android.phase2">
+
+    <uses-sdk android:minSdkVersion="14" android:targetSdkVersion="18"/>
+
+    <uses-permission android:name="android.permission.INTERNET"/>
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"/>
+    <uses-permission android:name="android.permission.VIBRATE"/>
+    <uses-permission android:name="android.permission.READ_PHONE_STATE"/>
+    <uses-permission android:name="android.permission.CALL_PHONE"/>
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION"/>
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION"/>
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE"/>
+
+    <application android:allowBackup="true" android:icon="@drawable/telanganalogo" android:label="@string/app_name" android:largeHeap="true" android:theme="@style/AppTheme">
+        <activity android:label="payment success" android:name="com.telanganatourism.android.phase2.PaymentSuccessActivity" android:screenOrientation="portrait">
+            <intent-filter>
+                <data android:host="@string/hostname" android:scheme="com.telanganatourism.android.phase2"/>
+
+                <action android:name="android.intent.action.VIEW"/>
+
+                <category android:name="android.intent.category.DEFAULT"/>
+                <category android:name="android.intent.category.BROWSABLE"/>
+            </intent-filter>
+        </activity>
+        <activity android:label="@string/app_name" android:launchMode="singleTask" android:name="com.telanganatourism.android.phase2.SplashScreen" android:screenOrientation="portrait" android:theme="@android:style/Theme.Wallpaper.NoTitleBar.Fullscreen">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"/>
+
+                <category android:name="android.intent.category.LAUNCHER"/>
+            </intent-filter>
+        </activity>
+        <activity android:configChanges="locale" android:name="com.telanganatourism.android.phase2.MainActivity" android:screenOrientation="portrait">
+        </activity>
+        <activity android:name="com.telanganatourism.android.phase2.DetailScreen1" android:screenOrientation="portrait" android:theme="@style/Theme.TranslucentActionBar.ActionBar.Overlay">
+        </activity>
+        <activity android:name="com.telanganatourism.android.phase2.ContactUs" android:screenOrientation="portrait">
+        </activity>
+        <activity android:name="com.telanganatourism.android.phase2.SettingsActivity" android:screenOrientation="portrait">
+        </activity>
+        <activity android:name="com.telanganatourism.android.phase2.SubFragmentActivity" android:screenOrientation="portrait">
+        </activity>
+        <activity android:name="com.telanganatourism.android.phase2.ReadmoreActivity" android:screenOrientation="portrait">
+        </activity>
+        <activity android:name="com.telanganatourism.android.phase2.HotelBookingActivity" android:screenOrientation="portrait">
+        </activity>
+        <activity android:name="com.telanganatourism.android.phase2.HotelBookingConfirm" android:screenOrientation="portrait">
+        </activity>
+        <activity android:name="com.telanganatourism.android.phase2.PaymentScreen" android:screenOrientation="portrait">
+        </activity>
+        <activity android:name="com.telanganatourism.android.phase2.HotelBookingSuccess" android:screenOrientation="portrait">
+        </activity>
+        <activity android:name="com.telanganatourism.android.phase2.PackageListing" android:screenOrientation="portrait">
+        </activity>
+        <activity android:name="com.telanganatourism.android.phase2.SeatSelection" android:screenOrientation="portrait">
+        </activity>
+        <activity android:name="com.telanganatourism.android.phase2.PackageBookingSuccess" android:screenOrientation="portrait">
+        </activity>
+        <activity android:name="com.telanganatourism.android.phase2.Package_Booking" android:screenOrientation="portrait">
+        </activity>
+        <activity android:name="com.telanganatourism.android.phase2.SeatSelctionWebview" android:screenOrientation="portrait">
+        </activity>
+        <activity android:name="com.telanganatourism.android.phase2.PackageTouristDetails" android:screenOrientation="portrait">
+        </activity>
+
+        <service android:enabled="true" android:name="com.telanganatourism.android.phase2.backgroundservice.BackgroundService"/>
+        <service android:enabled="true" android:name="com.telanganatourism.android.phase2.backgroundservice.TrackingService"/>
+        <service android:enabled="true" android:name="com.telanganatourism.android.phase2.backgroundservice.UpdatingServices"/>
+        <activity android:label="@string/app_name" android:name="com.ebs.android.sdk.PaymentDetails" android:screenOrientation="portrait">
+        </activity>
+        <activity android:label="@string/title_activity_payment_detail" android:name="com.ebs.android.sdk.PaymentDetailActivity" android:screenOrientation="portrait">
+        </activity>
+        <activity android:label="@string/title_activity_payment" android:name="com.ebs.android.sdk.PaymentActivity" android:screenOrientation="portrait" android:windowSoftInputMode="adjustResize">
+        </activity>
+        <activity android:label="@string/title_activity_webview" android:name="com.ebs.android.sdk.WebViewActivity" android:screenOrientation="portrait" android:windowSoftInputMode="adjustResize">
+        </activity>
+        <activity android:label="@string/title_activity_test__transaction_details" android:name="com.ebs.android.sdk.EBSHomeConfigurableActivity" android:screenOrientation="portrait">
+        </activity>
+        <activity android:label="@string/title_activity_payment_failure" android:name="com.ebs.android.sdk.PaymentFailureActivity">
+        </activity>
+        <activity android:label="@string/title_activity_idle_time_out" android:name="com.ebs.android.sdk.IdleTimeOut">
+        </activity>
+    </application>
+
+</manifest>

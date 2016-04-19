@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+    
+    <RelativeLayout
+                                android:id="@+id/lay1"
+                                android:layout_width="fill_parent"
+                                android:layout_height="wrap_content"
+                                android:orientation="horizontal"
+                                android:padding="10dp"
+                                android:background="#ffffff"
+                                android:visibility="visible"
+                                android:layout_marginBottom="1dp" >
+
+                                <TextView
+                                    android:id="@+id/title_1"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_alignParentLeft="true"
+                                    android:layout_marginBottom="5dp"
+                                    android:gravity="center_vertical"
+                                    android:text="@string/emergency_contact_blood_bank"
+                                    android:textColor="#000000"
+                                    android:textSize="17dp"
+                                    android:textStyle="bold" />
+
+                                <TextView
+                                    android:id="@+id/title_1_pho"
+                                    android:layout_width="fill_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_alignParentLeft="true"
+                                    android:layout_below="@+id/title_1"
+                                    android:layout_centerVertical="true"
+                                    android:layout_marginBottom="21dp"
+                                    android:drawablePadding="10dp"
+                                    android:drawableRight="@drawable/call"
+                                    android:gravity="left|center_vertical"
+                                    android:text="@string/emergency_contact_blood_bank_number"
+                                    android:textColor="#616161"
+                                    android:textStyle="bold" />
+                            </RelativeLayout>
+    
+
+</LinearLayout>

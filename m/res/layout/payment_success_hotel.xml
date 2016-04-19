@@ -1,0 +1,369 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#E5E5E5"
+    android:orientation="vertical" >
+<ScrollView
+        android:id="@+id/scrollView1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        >
+
+        <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="match_parent" >
+            
+             <TextView
+                android:id="@+id/tv_right_icon"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:padding="5dp"
+                android:layout_centerInParent="true"
+                android:background="@drawable/success_icon"/>
+             
+             <TextView
+                android:id="@+id/tv_text_thanks"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="5dp"
+                android:layout_centerInParent="true"
+                android:textColor="#40ba57"
+                android:textSize="20sp"
+                android:layout_below="@+id/tv_right_icon"
+                android:text="Thanks you"/>
+
+            <TextView
+                android:id="@+id/tv_hotel_name"
+                android:layout_width="fill_parent"
+                android:padding="5dp"
+                android:layout_marginLeft="30dp"
+                android:layout_marginRight="30dp"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/tv_text_thanks"
+                android:text="Your booking for Haritha Taramathi Baradari Resort Successfully done!"
+                android:textColor="#808080"
+                android:gravity="center"
+                android:textSize="17sp" 
+                />
+
+            <RelativeLayout
+                android:id="@+id/checkLay"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_below="@+id/tv_hotel_name"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:background="@drawable/background1"
+                android:padding="3dp" >
+                
+                <TextView
+                android:id="@+id/tv_ref_id"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:padding="5dp"
+                android:textSize="16sp"
+                android:textColor="#838383"
+                android:text="Ref ID:"/>
+
+                <View
+                    android:id="@+id/view3"
+                    android:layout_width="fill_parent"
+                    android:layout_height="1dp"
+                    android:layout_below="@+id/tv_ref_id"
+                    android:background="#DCDCDC" />
+                
+                
+                
+                <LinearLayout
+                    android:id="@+id/rr_date_layout"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/view3"
+                    android:padding="5dp"
+                    android:orientation="horizontal" >
+                    
+                     <RelativeLayout
+                    android:id="@+id/rr_checkin_layout"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                     >
+
+                    <TextView
+                        android:id="@+id/tv_text_checkin"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="CHECK-IN"
+                         android:paddingTop="5dp"
+                         android:paddingLeft="5dp"
+                        android:textColor="#838383"
+                        android:textSize="12sp" />
+                    
+
+                    <TextView
+                        android:id="@+id/tv_value_checkin"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="5dp"
+                        android:padding="5dp"
+                        android:text="13-10-2015"
+                        android:drawableLeft="@drawable/calendar"
+                        android:drawablePadding="5dp"
+                        android:textColor="#838383"
+                        android:textSize="12sp"
+                        android:layout_below="@+id/tv_text_checkin" />
+                </RelativeLayout>
+                
+                 <RelativeLayout
+                    android:id="@+id/rr_checkout_layout"
+                    android:layout_width="fill_parent"
+                   android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    >
+
+                    <TextView
+                        android:id="@+id/tv_text_checkout"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="CHECK-OUT"
+                        android:paddingTop="5dp"
+                        android:paddingLeft="5dp"
+                        android:textColor="#838383"
+                        android:textSize="12sp" />
+
+                     <TextView
+                        android:id="@+id/tv_value_checkout"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="5dp"
+                        android:padding="5dp"
+                         android:drawableLeft="@drawable/calendar"
+                        android:drawablePadding="5dp"
+                        android:textColor="#838383"
+                         android:text="15-10-2015"
+                        android:textSize="12sp"
+                        android:layout_below="@+id/tv_text_checkout"
+                        
+                        />
+                </RelativeLayout>
+
+                    
+                </LinearLayout>
+                
+                <View
+                    android:id="@+id/view4"
+                    android:layout_width="fill_parent"
+                    android:layout_height="1dp"
+                    android:layout_below="@+id/rr_date_layout"
+                    android:background="#DCDCDC" />
+
+                <RelativeLayout
+                    android:id="@+id/stayNightsLayout"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/view4"
+                    android:padding="10dp" >
+
+                    <TextView
+                        android:id="@+id/nightTxt"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="5dp"
+                        android:text="NIGHTS"
+                        android:textColor="@color/black"
+                        android:textSize="16sp" />
+
+                    <TextView
+                        android:id="@+id/nightStayValTxt"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_marginBottom="5dp"
+                        android:text="1"
+                        android:textColor="#838383"
+                        android:textSize="18sp" />
+                </RelativeLayout>
+
+                <View
+                    android:id="@+id/view55"
+                    android:layout_width="fill_parent"
+                    android:layout_height="1dp"
+                    android:layout_below="@+id/stayNightsLayout"
+                    android:background="#DCDCDC" />
+                
+                
+                <LinearLayout
+                    android:id="@+id/ll_no_of_occupants"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/view55"
+                    android:padding="5dp"
+                    android:orientation="horizontal"
+                    >
+                     
+
+                    <TextView
+                        android:id="@+id/tv_text_occupants"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:text="No OF OCCUPANTS"
+                        android:layout_weight="1"
+                        android:padding="5dp"
+                        android:textColor="@color/black"
+                        android:textSize="16sp" />
+
+                 <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                     android:layout_weight="1" >
+                    <TextView
+                        android:id="@+id/tv_value_adults"
+                         android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:text="ADULTS"
+                        android:padding="5dp"
+                        android:textColor="#838383"
+                        android:textSize="12sp"
+                        android:layout_weight="1" />
+
+                     <TextView
+                        android:id="@+id/tv_value_children"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:padding="5dp"
+                        android:textColor="#838383"
+                         android:text="CHILDREN"
+                        android:textSize="12sp"
+                        android:layout_weight="1"
+                        
+                        />
+                     </LinearLayout>
+                    
+                </LinearLayout>
+                
+               <View
+                    android:id="@+id/view5"
+                    android:layout_width="fill_parent"
+                    android:layout_height="1dp"
+                    android:layout_below="@+id/ll_no_of_occupants"
+                    android:background="#DCDCDC" />
+
+               <RelativeLayout
+                    android:id="@+id/rr_roomtype"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/view5"
+                    android:padding="10dp" >
+
+                    <TextView
+                        android:id="@+id/tv_txt_rtype"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="5dp"
+                        android:text="ROOMTYPE"
+                        android:textColor="@color/black"
+                        android:textSize="16sp" />
+
+                    <TextView
+                        android:id="@+id/tv_value_rtype"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_marginBottom="5dp"
+                        android:text="A/C SUITE"
+                        android:textColor="#838383"
+                        android:textSize="18sp" />
+                </RelativeLayout>
+
+                <View
+                    android:id="@+id/view6"
+                    android:layout_width="fill_parent"
+                    android:layout_height="1dp"
+                    android:layout_below="@+id/rr_roomtype"
+                    android:background="#DCDCDC" />
+                
+                <RelativeLayout
+                android:id="@+id/grandTotalLay"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/view6"
+                android:background="@drawable/background1"
+                android:padding="10dp" >
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical" >
+
+                    <TextView
+                        android:id="@+id/textView_ta"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Total Amount"
+                        android:textSize="16sp" />
+
+                    <TextView
+                        android:id="@+id/textView_inc"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Incl. Taxes &amp; Service Fee"
+                        android:textSize="12sp" />
+                </LinearLayout>
+
+                
+                    
+                    <TextView
+                        android:id="@+id/grandTotal_Result"
+                        android:layout_width="wrap_content"
+                        android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                        android:layout_height="wrap_content"
+                        android:text="Rs 0"
+                        android:textColor="#D95469"
+                        android:textSize="25sp" />
+            </RelativeLayout>
+                
+            </RelativeLayout>
+            <TextView
+                android:id="@+id/tv_text_emailbutom"
+                android:layout_width="fill_parent"
+                android:padding="5dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="10dp"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/checkLay"
+                android:text="Please check your email for more details"
+                android:textColor="#808080"
+                android:gravity="center"
+                android:textSize="17sp" 
+                />
+        </RelativeLayout>
+    </ScrollView>
+     <RelativeLayout
+                android:id="@+id/rr_backbtn"
+                android:layout_width="fill_parent"
+                android:layout_height="50dp"
+               android:layout_alignParentBottom="true"
+        android:background="#d08936"
+        android:gravity="center"
+                 >
+        <TextView
+        android:id="@+id/tv_back"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+       
+        android:text="Back to Home"
+        android:drawableLeft="@drawable/back_button"
+        android:drawablePadding="20dp"
+        android:textColor="#ffffff"
+        android:textSize="18sp" />
+         
+        </RelativeLayout>
+
+
+</RelativeLayout>

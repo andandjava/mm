@@ -1,0 +1,151 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#E5E5E5"
+    android:orientation="vertical" >
+
+   
+     <RelativeLayout
+                android:id="@+id/rr_backbtn"
+                android:layout_width="fill_parent"
+                android:layout_height="50dp"
+               android:layout_alignParentBottom="true"
+        android:background="#d08936"
+        android:gravity="center"
+                 >
+        <TextView
+        android:id="@+id/tv_back"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+       
+        android:text="Back to Home"
+        android:drawableLeft="@drawable/back_button"
+        android:drawablePadding="20dp"
+        android:textColor="#ffffff"
+        android:textSize="18sp" />
+         
+        </RelativeLayout>
+<ScrollView
+        android:id="@+id/scrollView1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        >
+     <RelativeLayout
+         android:layout_width="fill_parent"
+         android:layout_height="match_parent"
+         android:layout_alignParentLeft="true"
+         android:layout_alignParentTop="true" >
+
+         <TextView
+             android:id="@+id/tv_right_icon"
+             android:layout_width="wrap_content"
+             android:layout_height="wrap_content"
+             android:layout_alignParentTop="true"
+             android:layout_centerInParent="true"
+             android:background="@drawable/booking_error"
+             android:padding="5dp" />
+
+         <TextView
+             android:id="@+id/tv_text_thanks"
+             android:layout_width="wrap_content"
+             android:layout_height="wrap_content"
+             android:layout_below="@+id/tv_right_icon"
+             android:layout_centerInParent="true"
+             android:padding="5dp"
+             android:text="Sorry Process failed"
+             android:textColor="#40ba57"
+             android:textSize="20sp" />
+
+         <TextView
+             android:id="@+id/tv_hotel_name"
+             android:layout_width="fill_parent"
+             android:layout_height="wrap_content"
+             android:layout_below="@+id/tv_text_thanks"
+             android:layout_marginLeft="30dp"
+             android:layout_marginRight="30dp"
+             android:gravity="center"
+             android:padding="5dp"
+             android:text="Your booking has been failed!"
+             android:textColor="#808080"
+             android:textSize="17sp" />
+         
+         <TextView
+             android:id="@+id/tv_hotel_name1"
+             android:layout_width="fill_parent"
+             android:layout_height="wrap_content"
+             android:layout_below="@+id/tv_hotel_name"
+             android:layout_marginLeft="30dp"
+             android:layout_marginRight="30dp"
+             android:gravity="center"
+             android:padding="5dp"
+             android:text="Your ref No"
+             android:textColor="#808080"
+             android:textSize="17sp" />
+         
+         
+
+         <RelativeLayout
+             android:id="@+id/checkLay"
+             android:layout_width="fill_parent"
+             android:layout_height="wrap_content"
+             android:layout_alignParentLeft="true"
+             android:layout_below="@+id/tv_hotel_name1"
+             android:layout_marginLeft="20dp"
+             android:layout_marginRight="20dp"
+             android:background="@drawable/background1"
+             android:padding="3dp" >
+
+             <LinearLayout
+                 android:id="@+id/ll_servicename"
+                 android:layout_width="fill_parent"
+                 android:layout_height="wrap_content"
+                 android:orientation="vertical"
+                 android:padding="5dp" >
+
+                 <TextView
+                     android:id="@+id/package_title_txt"
+                     android:layout_width="fill_parent"
+                     android:layout_height="wrap_content"
+                     android:layout_marginBottom="5dp"
+                     android:paddingBottom="5dp"
+                     android:paddingLeft="5dp"
+                     android:paddingTop="5dp"
+                     android:text="Kindly contact customer Service"
+                     android:gravity="center_horizontal"
+                     android:textColor="#3E3F80"
+                     android:textSize="17sp" />
+
+                 <TextView
+                     android:id="@+id/package_type_txt"
+                     android:layout_width="fill_parent"
+                     android:layout_height="wrap_content"
+                     android:layout_marginBottom="5dp"
+                     android:paddingBottom="5dp"
+                     android:paddingLeft="5dp"
+                     android:text="helpdesk@tgtdc.in"
+                      android:gravity="center_horizontal"
+                     android:textColor="#E2A9EE"
+                     android:textSize="17sp" />
+
+               
+             </LinearLayout>
+         </RelativeLayout>
+
+         <TextView
+             android:id="@+id/tv_text_emailbutom"
+             android:layout_width="fill_parent"
+             android:layout_height="wrap_content"
+             android:layout_below="@+id/checkLay"
+             android:layout_marginBottom="10dp"
+             android:layout_marginTop="10dp"
+             android:gravity="center"
+             android:padding="5dp"
+             android:text="Please try again"
+             android:textColor="#808080"
+             android:textSize="17sp" />
+     </RelativeLayout>
+      </ScrollView>
+
+</RelativeLayout>
